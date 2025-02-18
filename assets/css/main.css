@@ -8601,3 +8601,102 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+/* Timeline Container */
+.study-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: flex-start; /* Align to the top */
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Allow for flexible wrapping */
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+    transform: translateX(-50%);
+}
+
+/* Content Section with Image */
+.timeline-item .timeline-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(70% - 70px); /* Adjust for image size on left */
+    max-width: 750px;
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    align-items: flex-start;
+    gap: 10px; /* Space between title and description */
+}
+
+/* Image Styling */
+.timeline-item .timeline-image {
+    height: 50px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.timeline-item .timeline-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Rounded corners */
+    object-fit: cover;
+}
+
+/* Left-aligned content */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: 50%; /* Keep it left-aligned */
+}
+
+/* Right-aligned content */
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 50%; /* Keep it right-aligned */
+    text-align: right;
+}
+
+.timeline-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Timeline Circle */
+.timeline-item:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #009688;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(even):after {
+    left: 50%;
+}
+
+.timeline-item:nth-child(odd):after {
+    left: 50%;
+}
