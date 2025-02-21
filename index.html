@@ -449,11 +449,12 @@
 				const loader = new GLTFLoader();
 				let model;
 				loader.load(
-					'https://raw.githubusercontent.com/lfoyer/lfoyer.github.io/main/images/arduino_uno/scene.gltf', // Path to the model
+					'https://raw.githubusercontent.com/lfoyer/lfoyer.github.io/main/images/10k_ohm_resistor/scene.gltf', // Path to the model
 					(gltf) => {
 						model = gltf.scene;
 						scene.add(model);
-						model.scale.set(0.5, 0.5, 0.5); // Optional: Adjust the scale of the model
+						model.scale.set(1.5, 1.5, 1.5); // Optional: Adjust the scale of the model
+						model.position.z -= 0.25;
 					},
 					(xhr) => {
 						// Progress callback (optional)
@@ -463,9 +464,14 @@
 						console.error('Error loading model:', error);
 					}
 				);
-			  
+
+
+
+				const axesHelper = new THREE.AxesHelper(1); // Length of axes
+				scene.add(axesHelper);
+				
 				// Add a light
-				const light = new THREE.DirectionalLight(0xffffff, 1);
+				const light = new THREE.AmbientLight(0xffffff, 2);
 				light.position.set(1, 1, 2).normalize();
 				scene.add(light);
 			  
