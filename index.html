@@ -511,7 +511,7 @@
 				  'https://raw.githubusercontent.com/lfoyer/lfoyer.github.io/main/images/keyboard/scene.gltf',
 				  (gltf) => {
 					model2 = gltf.scene;
-					model2.scale.set(7, 7, 7);
+					model2.scale.set(9, 9, 9);
 			  
 					const box = new THREE.Box3().setFromObject(model2);
 					const center = box.getCenter(new THREE.Vector3());
@@ -519,6 +519,8 @@
 					model2.position.x += (model2.position.x - center.x);
 					model2.position.y += (model2.position.y - center.y);
 					model2.position.z += (model2.position.z - center.z);
+
+					model2.rotation.x += Math.PI / 2
 			  
 					scene2.add(model2);
 				  },
