@@ -2110,7 +2110,7 @@ input, select, textarea {
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
-		font-size: 0.75rem;
+		font-size: 0.55rem;
 		max-width: 20rem;
 		height: 3.75em;
 		line-height: 3.75em;
@@ -2118,6 +2118,20 @@ input, select, textarea {
 		padding: 0 2.5em;
 		text-overflow: ellipsis;
 		overflow: hidden;
+	}
+	.button-small {
+		font-size: 0.45rem; /* Slightly smaller text */
+		height: 2.5em; /* Reduce height */
+		line-height: 2.5em; /* Match line-height */
+		border-radius: 2.5em; /* Adjust for rounded corners */
+		padding: 0 1.5em; /* Reduce padding */
+		max-width: 15rem; /* Smaller max width */
+		background-color: #e1f3ff !important;
+		color: white !important; /* Text color */
+	}
+	.button-small:hover {
+		background-color: #c1ebfe !important; /* Darker red on hover */
+
 	}
 
 		input[type="submit"].icon:before,
@@ -2679,6 +2693,13 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+		.image canvas {
+			width: 100%;
+			height: 100%;
+			display: block; /* Prevents extra spacing */
+		}
+			
 
 /* List */
 

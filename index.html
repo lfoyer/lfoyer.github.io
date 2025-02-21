@@ -6,11 +6,20 @@
 -->
 <html>
 	<head>
-		<title>Story by HTML5 UP</title>
+		<title>Laurent Foyer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="importmap">
+			{
+			  "imports": {
+				"three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+				"OrbitControls": "https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/controls/OrbitControls.js",
+				"GLTFLoader": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/loaders/GLTFLoader.js"
+			  }
+			}
+		  </script>
 	</head>
 	<body class="is-preload">
 
@@ -21,7 +30,7 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Laurent Foyer</h1>
-							<p class="major">Computer science student at <a href="https://www.insa-rouen.fr/en">INSA Rouen</a>.</p>
+							<p class="major">Computer science student at <a href="https://www.insa-rouen.fr/en">INSA Rouen</a></p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
 							</ul>
@@ -35,7 +44,7 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>Computing, electronics, and more</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p>With a background in both computer science and electrical engineering, I aim to apply my skills in meaningful fields at the intersection of software, hardware, and physics.</p>
 							<ul class="actions stacked">
 								<li><a href="CV_LFoyer_en.pdf" class="button">View CV (pdf)</a></li>
 							</ul>
@@ -55,8 +64,8 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
-						</div>
+							<canvas id="threejs-canvas"></canvas>
+						</div>						
 					</section>
 
 				<!-- Four -->
@@ -88,7 +97,7 @@
 										<img src="images/insa2.jpg" alt="INSA logo">
 									</div>
 									<h3>2022-2025: <strong>Computer science</strong></h3>
-									<p>Completed Engineering Degree in Computer Science</p>
+									<p>Completed engineering degree in computer science.</p>
 								</div>
 							</div>
 							<div class="timeline-item">
@@ -106,7 +115,7 @@
 										<img src="images/lnf.png" alt="LNF-INFN logo">
 									</div>
 									<h3>Jul-Aug 2023: <strong>Data analysis internship</strong></h3>
-									<p>Gained practical experience in software development.</p>
+									<p>Data analysis internship at the National Laboratory of Frascati of the National Institute for Nuclear Physics (Italy).</p>
 								</div>
 							</div>
 							<div class="timeline-item">
@@ -115,7 +124,7 @@
 										<img src="images/iut2.jpg" alt="IUT logo">
 									</div>
 									<h3>2020-2022: <strong>Electrical Engineering and Industrial Computing</strong></h3>
-									<p>Completed Technical Degree in Electrical Engineering.</p>
+									<p>Completed technical degree in electrical engineering.</p>
 								</div>
 							</div>
 							<div class="timeline-item">
@@ -124,7 +133,7 @@
 										<img src="images/smi.png" alt="SMI logo">
 									</div>
 									<h3>Apr-Jun 2022: <strong>Electronics internship</strong></h3>
-									<p>Graduated with honors from XYZ High School</p>
+									<p>Electronics internship at the Stefan Meyer Institute for Subatomic Physics of the Austrian Academy of Sciences.</p>
 								</div>
 							</div>
 						</div>
@@ -283,58 +292,68 @@
 				<!-- Six -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
-							<h2>Ipsum sed consequat</h2>
+							<h2>Technical skills</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+									<span class="icon solid style2 major fa-code"></span>
+									<h3>Programming</h3>
+									<p>Advanced knowledge of object-oriented programming and algorithms in C, C++, Java, and Python</p>
+									<a class="button button-small" font-size="0.5rem">Algorithms</a> <a class="button button-small">Object-oriented</a> <a class="button button-small">Databases</a>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
+									<h3>Data science</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+									<h3>Electronics</h3>
+									<p>General knowledge of circuit theory and analysis.</p>
+									<a class="button button-small">Analog electronics</a> <a class="button button-small">Digital electronics</a>
+								</section>
+								<section>
+									<span class="icon style2 major fa-python"></span>
+									<h3>Python</h3>
+									<p>Advanced programming in Python and usual libraries</p>
+									<a class="button button-small">NumPy</a> <a class="button button-small">pandas</a> <a class="button button-small">OpenCV</a> <a class="button button-small">PyTorch</a> <a class="button button-small">scikit-learn</a>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-cog"></span>
+									<h3>Mathematics</h3>
+									<p>Notions of theoretical mathematics and applied mathematics in Python</p>
+									<a class="button button-small">Machine learning</a> <a class="button button-small">Statistics</a> <a class="button button-small">Optimization</a> <a class="button button-small">Image processing</a> <a class="button button-small">Signal processing</a>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-plug"></span>
+									<h3>Instrumentation</h3>
+									<p>Extensive experience using electronic instrumentation in a laboratory setting</p>
+									<a class="button button-small">Oscilloscope</a> <a class="button button-small">Multimeter</a> <a class="button button-small">Function generator</a> <a class="button button-small">Power supply</a>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-desktop"></span>
+									<h3>Embedded computing</h3>
+									<p>Experience using embedded computing units</p>
+									<a class="button button-small">Arduino</a> <a class="button button-small">Raspberry Pi</a> <a class="button button-small">NVIDIA Jetson</a>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-globe"></span>
+									<h3>Web</h3>
+									<p>Basic notions of (mainly front-end) web development</p>
+									<a class="button button-small">HTML</a> <a class="button button-small">CSS</a> <a class="button button-small">JavaScript</a>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-git"></span>
+									<h3>Git</h3>
+									<p>Experience in distributed version controlling for collaborative group work</p>
+									<a class="button button-small">GitHub</a> <a class="button button-small">GitLab</a> <a class="button button-small">CI/CD</a>
+
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-brain"></span>
+									<h3>Artificial intelligence</h3>
+									<p>Machine learning</p>
+									<a class="button button-small">Graph theory</a> <a class="button button-small">Search algorithms</a> <a class="button button-small">Genetic algorithms</a> <a class="button button-small">Machine learning</a>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-envelope"></span>
@@ -342,8 +361,8 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Risus</h3>
+									<span class="icon style2 major fa-gem"></span>
+									<h3>Lorem</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 							</div>
@@ -399,6 +418,86 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="module">
+				import * as THREE from 'three';
+				import { OrbitControls } from 'OrbitControls';
+				import { GLTFLoader } from 'GLTFLoader';
 
+				// Select the canvas
+				const canvas = document.getElementById('threejs-canvas');
+			  
+				// Create a scene
+				const scene = new THREE.Scene();
+			  
+				// Create a camera
+				const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+				camera.position.z = 2;
+			  
+				// Create a renderer
+				const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
+				renderer.setPixelRatio(window.devicePixelRatio);
+				renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+				camera.aspect = canvas.clientWidth / canvas.clientHeight;
+				camera.updateProjectionMatrix();
+			  
+				// Orbit Controls
+				const controls = new OrbitControls(camera, renderer.domElement);
+				controls.enableDamping = true; // Smooth interaction
+				controls.dampingFactor = 0.05;
+			  
+				// Load the GLTF model
+				const loader = new GLTFLoader();
+				let model;
+				loader.load(
+					'https://github.com/lfoyer/lfoyer.github.io/blob/main/images/arduino_uno/scene.gtlf', // Path to the model
+					(gltf) => {
+						model = gltf.scene;
+						scene.add(model);
+						model.scale.set(0.5, 0.5, 0.5); // Optional: Adjust the scale of the model
+					},
+					(xhr) => {
+						// Progress callback (optional)
+						console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
+					},
+					(error) => {
+						console.error('Error loading model:', error);
+					}
+				);
+			  
+				// Add a light
+				const light = new THREE.DirectionalLight(0xffffff, 1);
+				light.position.set(1, 1, 2).normalize();
+				scene.add(light);
+			  
+				function resizeRendererToDisplaySize() {
+					const width = canvas.clientWidth;
+					const height = canvas.clientHeight;
+				
+					if (canvas.width !== width || canvas.height !== height) {
+						renderer.setSize(width, height, false);
+						camera.aspect = width / height;
+						camera.updateProjectionMatrix();
+					}
+				}
+			  
+				// Animation loop
+				function animate() {
+					requestAnimationFrame(animate);
+					resizeRendererToDisplaySize();
+				  
+					if (model) {
+						model.rotation.x += 0.01; // Rotate the model
+						model.rotation.y += 0.01; // Rotate the model
+					}
+			
+					controls.update(); // Ensure controls are updated
+					renderer.render(scene, camera);
+				}
+			  
+				// Handle window resizing
+				window.addEventListener('resize', resizeRendererToDisplaySize);
+			  
+				animate();
+			</script>			
 	</body>
 </html>
