@@ -5,13 +5,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Laurent Foyer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script type="importmap">
+
+<head>
+	<title>Laurent Foyer</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script type="importmap">
 			{
 			  "imports": {
 				"three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
@@ -20,575 +23,805 @@
 			  }
 			}
 		  </script>
-		  <script>
-			alert("This website is still under construction. Information presented may be incomplete or subject to change.")
-		  </script>
-	</head>
-	<body class="is-preload">
+	<script>
+		alert("This website is still under construction. Information presented may be incomplete or subject to change.")
+	</script>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+<body class="is-preload">
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Laurent Foyer</h1>
-							<p class="major">Computer science student at <a href="https://www.insa-rouen.fr/en">INSA Rouen</a></p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-							</ul>
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<!-- One -->
+		<section
+			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+			<div class="content">
+				<h1>Laurent Foyer</h1>
+				<p class="major">Computer science student at <a href="https://www.insa-rouen.fr/en">INSA Rouen</a></p>
+				<ul class="actions stacked">
+					<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/banner.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="first">
+			<div class="content">
+				<h2>Computing, electronics, and more</h2>
+				<p>With a background in both computer science and electrical engineering, I aim to apply my skills in
+					meaningful fields at the intersection of software, hardware, and physics.</p>
+				<ul class="actions stacked">
+					<li><a href="CV_LFoyer_en.pdf" class="button">View CV (pdf)</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight01.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Electrical engineering</h2>
+				<p>I hold a technical degree in electrical engineering from the <a
+						href="https://www.univ-rouen.fr/university-of-rouen-normandy/">Institute of Technology of
+						Rouen</a>.</p>
+				<ul class="actions stacked">
+					<li><a href="#first" class="button">Learn More</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<canvas id="threejs-canvas-1"></canvas>
+			</div>
+		</section>
+
+		<!-- Four -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Computer science</h2>
+				<p>I am currently pursuing an engineering degree in computer science from the <a
+						href="https://www.insa-rouen.fr/en">National Institute of Applied Science of Rouen</a>.</p>
+				<ul class="actions stacked">
+					<li><a href="#" class="button">Learn More</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<canvas id="threejs-canvas-2"></canvas>
+			</div>
+		</section>
+
+		<!-- Timeline -->
+		<section class="timeline-wrapper">
+			<section class="education-timeline">
+				<h1 class="section-title">Timeline</h1>
+
+				<!-- ONE ENTRY -->
+				<div class="timeline-entry">
+					<a href="https://www.insa-rouen.fr/en" target="_blank" style="display:inline-block;">
+						<img src="images/insa.png" alt="INSA Rouen Logo" style="transition: transform 0.2s; display:block;">
+					</a>
+
+					<!-- Left: School Info -->
+					<div class="timeline-info">
+						<h2>2022 - 2025</h2>
+						<p><strong>National Institute of Applied Sciences of Rouen</strong></p>
+						<p>
+							Engineering curriculum focused on data science, software architecture, and machine learning.
+						</p>
+
+						<h3>Key Projects</h3>
+						<ul class="details-list">
+							<p>• ...</p>
+							<p>• ...</p>
+						</ul>
+					</div>
+
+					<!-- Right: Internships (Logo + Text + Clickable) -->
+					<div class="timeline-roles">
+						<div class="role-item" data-modal="modal-asml">
+							<img src="images/asml_logo.jpg" alt="ASML" />
+							<span>Data Analyst<br><small>@ ASML</small></span>
 						</div>
-						<div class="image">
-							<img src="images/banner.jpg" alt="" />
+
+						<div class="role-item" data-modal="modal-ait">
+							<img src="images/ait_logo.jpg" alt="AIT" />
+							<span>ML Research<br><small>@ AIT</small></span>
 						</div>
+
+						<div class="role-item" data-modal="modal-infn">
+							<img src="images/infn_logo.png" alt="INFN" />
+							<span>Data Analyst<br><small>@ INFN</small></span>
+						</div>
+					</div>
+				</div>
+
+				<!-- ONE ENTRY: IUT Rouen -->
+				<div class="timeline-entry">
+					<a href="https://www.univ-rouen.fr/university-of-rouen-normandy/" target="_blank" style="display:inline-block;">
+						<img src="images/iut.jpeg" alt="IUT Rouen Logo" style="transition: transform 0.2s; display:block;">
+					</a>
+
+					<!-- Left: School Info -->
+					<div class="timeline-info">
+						<h2>2020 - 2022</h2>
+						<p><strong>Institute of Technology of Rouen</strong></p>
+						<p>
+							Two-year technical degree in Electrical Engineering with a focus on electronics,
+							power systems, signal processing, telecommunications, control systems, and PLCs.
+						</p>
+
+						<h3>Key Projects</h3>
+						<ul class="details-list">
+							<p>• ...</p>
+							<p>• ...</p>
+						</ul>
+					</div>
+
+					<!-- Right: Internships -->
+					<div class="timeline-roles">
+						<div class="role-item" data-modal="modal-oeaw">
+							<img src="images/oeaw_logo.jpg" alt="OEAW" />
+							<span>Electronics Technician<br><small>@ ÖAW</small></span>
+						</div>
+
+						<div class="role-item" data-modal="modal-univrouen">
+							<img src="images/univrouen_logo.png" alt="Univ Rouen" />
+							<span>Tutor<br><small>@ Université de Rouen</small></span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- MODALS -->
+		<div class="modal-overlay" id="modal-asml">
+			<div class="modal-internship">
+				<span class="close">&times;</span>
+				<h2>Data Analysis Intern</h2>
+				<h4>ASML</h4>
+				<p>Jun-Nov 2025 - Veldhoven, Netherlands</p>
+
+				<!-- Internship description always visible -->
+				<p>
+					Worked on recreating and improving a Spotfire dashboard to monitor reticle defectivity trends,
+					enabling better detection and analysis of defects in semiconductor manufacturing processes.
+				</p>
+
+				<!-- Read more section about ASML -->
+				<div class="read-more-container">
+					<div class="read-more-toggle" role="button" tabindex="0">
+						<span class="read-more-label">About ASML</span>
+						<span class="arrow">▼</span>
+					</div>
+					<div class="read-more-content">
+						<p>
+							ASML is a global leader in photolithography systems for semiconductor manufacturing,
+							specializing in advanced technology that enables chipmakers to produce smaller, faster,
+							and more energy-efficient microchips.
+						</p>
+						<p>
+							The Reticle Defectivity Team focuses on ensuring the quality and reliability of photomasks
+							(reticles) used during chip production, playing a key role in yield and defect management.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="modal-overlay" id="modal-ait">
+			<div class="modal-internship">
+				<span class="close">&times;</span>
+				<h2>Machine Learning Research</h2>
+				<h4>Austrian Institute of Technology</h4>
+				<p>Apr-Jun 2025 - Vienna, Austria</p>
+				<p>
+					...
+				</p>
+
+				<!-- Read more section about AIT -->
+				<div class="read-more-container">
+					<div class="read-more-toggle" role="button" tabindex="0">
+						<span class="read-more-label">About the AIT</span>
+						<span class="arrow">▼</span>
+					</div>
+					<div class="read-more-content">
+						<p>
+							The AIT Austrian Institute of Technology is Austria's largest research and
+							technology organization, specializing in resilient, sustainable infrastructures
+							and the digital transformation of industry and society. With over 1,500
+							employees, AIT collaborates with universities, industry, and public institutions
+							across Europe, offering end-to-end expertise from strategic planning to
+							innovative solutions and spin-off development.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-overlay" id="modal-infn">
+			<div class="modal-internship">
+				<span class="close">&times;</span>
+				<h2>Data Analysis Intern</h2>
+				<h4>INFN - Laboratori Nazionali di Frascati (LNF)</h4>
+				<p>Jul-Aug 2023 - Frascati, Italy</p>
+
+				<!-- Internship description always visible -->
+				<p>
+					Performed data analysis supporting experimental research at the Laboratori Nazionali di Frascati,
+					contributing to the processing and interpretation of particle physics data.
+				</p>
+
+				<!-- Read more section about INFN -->
+				<div class="read-more-container">
+					<div class="read-more-toggle" role="button" tabindex="0">
+						<span class="read-more-label">About INFN</span>
+						<span class="arrow">▼</span>
+					</div>
+					<div class="read-more-content">
+						<p>
+							The Italian Institute for Nuclear Physics (INFN) is a leading public research institution
+							specializing in nuclear, particle, and astroparticle physics. Its Frascati National
+							Laboratories (LNF) are renowned for cutting-edge experiments and technological
+							innovation.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal-overlay" id="modal-oeaw">
+			<div class="modal-internship">
+				<span class="close">&times;</span>
+				<h2>Electronics</h2>
+				<h4>Stefan-Meyer-Institute for subatomic physics (Austrian Academy of Sciences)</h4>
+				<p>Apr-Jun 2022 - Vienna, Austria</p>
+				<p>
+					...
+				</p>
+				<!-- Read more section -->
+				<div class="read-more-container">
+					<div class="read-more-toggle" role="button" tabindex="0">
+						<span class="read-more-label">About the SMI</span>
+						<span class="arrow">▼</span>
+					</div>
+					<div class="read-more-content">
+						<p>
+							The Stefan Meyer Institute for Subatomic Physics (SMI), part of the Austrian
+							Academy of Sciences, is a research center in Vienna, Austria, focused on
+							fundamental studies in particle physics, quantum systems, and antimatter. It
+							conducts experiments at major international facilities like CERN and J-PARC,
+							exploring the structure of matter and the forces that govern it.
+						</p>
+						<p>
+							In 2025, the Stefan Meyer Institute for Subatomic Physics (SMI) merged with the
+							Institute for High Energy Physics (HEPHY) to form the Marietta Blau Institute
+							for Particle Physics (MBI).
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-overlay" id="modal-univrouen">
+			<div class="modal-internship">
+				<span class="close">&times;</span>
+				<h2>Tutor</h2>
+				<h4>Université de Rouen Normandie</h4>
+				<p>Sep-Jun 2022 - Rouen, France</p>
+				<p>
+					I tutored undergraduate students in computer science and helped manage lab sessions.
+				</p>
+
+				<!-- Read more section -->
+				<div class="read-more-container">
+					<div class="read-more-toggle" role="button" tabindex="0">
+						<span class="read-more-label">About the University of Rouen</span>
+						<span class="arrow">▼</span>
+					</div>
+					<div class="read-more-content">
+						<p>
+							The University of Rouen Normandy (URN) is a multidisciplinary institution with
+							over 34,000 students and seven campuses across Normandy. It plays a key role in
+							regional and international teaching and research, partnering with over 40
+							countries and participating in numerous global projects. Committed to accessible
+							higher education, URN fosters local economic and social development through its
+							12 faculties, institutes, and schools.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		</section>
+		</section>
+
+		<!-- Gallery -->
+		<div class="gallery style2 medium lightbox onscroll-fade-in">
+			<article>
+				<a href="images/gallery/fulls/01.jpg" class="image">
+					<img src="images/gallery/thumbs/01.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>LNF Group photo 1</h3>
+					<p>Attendees of the Mini workshop on kaonic atoms <br> Laboratori Nazionali di Frascati <br> July
+						18, 2023</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/02.jpg" class="image">
+					<img src="images/gallery/thumbs/02.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>LNF Group photo 2</h3>
+					<p>Attendees of the Mini workshop on kaonic atoms <br> Laboratori Nazionali di Frascati <br> July
+						18, 2023</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/03.jpg" class="image">
+					<img src="images/gallery/thumbs/03.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>SMI</h3>
+					<p>Team photo working on the Hbar hodoscope <br> Stefan Meyer Instite for Subatomic Physics <br>
+						June 13, 2022</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/04.jpg" class="image">
+					<img src="images/gallery/thumbs/04.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>DAΦNE 1</h3>
+					<p>SIDDHARTA-2 apparatus inside the DAΦNE collider <br> Laboratori Nazionali di Frascati <br> July
+						24, 2023</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/05.jpg" class="image">
+					<img src="images/gallery/thumbs/05.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>DAΦNE 2</h3>
+					<p>Laboratori Nazionali di Frascati <br> July 24, 2023</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/06.jpg" class="image">
+					<img src="images/gallery/thumbs/06.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>Sed Tempus</h3>
+					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/07.jpg" class="image">
+					<img src="images/gallery/thumbs/07.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>Ipsum Lorem</h3>
+					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/08.jpg" class="image">
+					<img src="images/gallery/thumbs/08.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>Magna Risus</h3>
+					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/09.jpg" class="image">
+					<img src="images/gallery/thumbs/09.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>Tempus Dolor</h3>
+					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/10.jpg" class="image">
+					<img src="images/gallery/thumbs/10.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>Sed Etiam</h3>
+					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/11.jpg" class="image">
+					<img src="images/gallery/thumbs/11.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>Magna Lorem</h3>
+					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<a href="images/gallery/fulls/12.jpg" class="image">
+					<img src="images/gallery/thumbs/12.jpg" alt="" />
+				</a>
+				<div class="caption">
+					<h3>Ipsum Dolor</h3>
+					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+					<ul class="actions fixed">
+						<li><span class="button small">Details</span></li>
+					</ul>
+				</div>
+			</article>
+		</div>
+
+		</section>
+
+		<!-- Six -->
+		<section class="wrapper style1 align-center">
+			<div class="inner">
+				<h2>Technical skills</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
+					amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+				<div class="items style1 medium onscroll-fade-in">
+					<section>
+						<span class="icon solid style2 major fa-code"></span>
+						<h3>Programming</h3>
+						<p>Advanced knowledge of object-oriented programming and algorithms in C, C++, Java, and Python
+						</p>
+						<a class="button button-small" font-size="0.5rem">Algorithms</a> <a
+							class="button button-small">Object-oriented</a> <a class="button button-small">Databases</a>
 					</section>
-
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Computing, electronics, and more</h2>
-							<p>With a background in both computer science and electrical engineering, I aim to apply my skills in meaningful fields at the intersection of software, hardware, and physics.</p>
-							<ul class="actions stacked">
-								<li><a href="CV_LFoyer_en.pdf" class="button">View CV (pdf)</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
-						</div>
+					<section>
+						<span class="icon solid style2 major fa-chart-bar"></span>
+						<h3>Data science</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 					</section>
-
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Electrical engineering</h2>
-							<p>I hold a technical degree in electrical engineering from the <a href="https://www.univ-rouen.fr/university-of-rouen-normandy/">Institute of Technology of Rouen</a>.</p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<canvas id="threejs-canvas-1"></canvas>
-						</div>						
+					<section>
+						<span class="icon solid style2 major fa-bolt"></span>
+						<h3>Electronics</h3>
+						<p>General knowledge of circuit theory and analysis.</p>
+						<a class="button button-small">Analog electronics</a> <a class="button button-small">Digital
+							electronics</a>
 					</section>
-
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Computer science</h2>
-							<p>I am currently pursuing an engineering degree in computer science from the <a href="https://www.insa-rouen.fr/en">National Institute of Applied Science of Rouen</a>.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<canvas id="threejs-canvas-2"></canvas>
-						</div>	
+					<section>
+						<span class="icon style2 major fa-python"></span>
+						<h3>Python</h3>
+						<p>Advanced programming in Python and usual libraries</p>
+						<a class="button button-small">NumPy</a> <a class="button button-small">pandas</a> <a
+							class="button button-small">OpenCV</a> <a class="button button-small">PyTorch</a> <a
+							class="button button-small">scikit-learn</a>
 					</section>
-
-				<!-- Five -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Timeline</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-						</div>
-
-						<!-- Timeline -->
-						<div class="study-timeline">
-							<div class="timeline-item">
-								<div class="timeline-content">
-									<div class="timeline-image">
-										<img src="images/insa2.jpg" alt="INSA logo">
-									</div>
-									<h3>2022-2025: <strong>Computer science</strong></h3>
-									<p>Completed engineering degree in computer science.</p>
-								</div>
-							</div>
-							<div class="timeline-item">
-								<div class="timeline-content">
-									<div class="timeline-image">
-										<img src="images/itba2.png" alt="TechCorp Logo">
-									</div>
-									<h3>Feb-Jul 2024: <strong>Academic exchange in Argentina</strong></h3>
-									<p>Semester abroad at the Institute of Technology of Buenos Aires (Argentina).</p>
-								</div>
-							</div>
-							<div class="timeline-item">
-								<div class="timeline-content">
-									<div class="timeline-image">
-										<img src="images/lnf.png" alt="LNF-INFN logo">
-									</div>
-									<h3>Jul-Aug 2023: <strong>Data analysis internship</strong></h3>
-									<p>Data analysis internship at the National Laboratory of Frascati of the National Institute for Nuclear Physics (Italy).</p>
-								</div>
-							</div>
-							<div class="timeline-item">
-								<div class="timeline-content">
-									<div class="timeline-image">
-										<img src="images/iut2.jpg" alt="IUT logo">
-									</div>
-									<h3>2020-2022: <strong>Electrical Engineering and Industrial Computing</strong></h3>
-									<p>Completed technical degree in electrical engineering.</p>
-								</div>
-							</div>
-							<div class="timeline-item">
-								<div class="timeline-content">
-									<div class="timeline-image">
-										<img src="images/smi.png" alt="SMI logo">
-									</div>
-									<h3>Apr-Jun 2022: <strong>Electronics internship</strong></h3>
-									<p>Electronics internship at the Stefan Meyer Institute for Subatomic Physics of the Austrian Academy of Sciences.</p>
-								</div>
-							</div>
-						</div>
-												
-
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>LNF Group photo 1</h3>
-										<p>Attendees of the Mini workshop on kaonic atoms <br> Laboratori Nazionali di Frascati <br> July 18, 2023</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>LNF Group photo 2</h3>
-										<p>Attendees of the Mini workshop on kaonic atoms <br> Laboratori Nazionali di Frascati <br> July 18, 2023</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>SMI</h3>
-										<p>Team photo working on the Hbar hodoscope <br> Stefan Meyer Instite for Subatomic Physics <br> June 13, 2022</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>DAΦNE 1</h3>
-										<p>SIDDHARTA-2 apparatus inside the DAΦNE collider <br> Laboratori Nazionali di Frascati <br> July 24, 2023</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>DAΦNE 2</h3>
-										<p>Laboratori Nazionali di Frascati <br> July 24, 2023</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-							</div>
+					<section>
+						<span class="icon solid style2 major fa-cog"></span>
+						<h3>Mathematics</h3>
+						<p>Notions of theoretical mathematics and applied mathematics in Python</p>
+						<a class="button button-small">Machine learning</a> <a
+							class="button button-small">Statistics</a> <a class="button button-small">Optimization</a>
+						<a class="button button-small">Image processing</a> <a class="button button-small">Signal
+							processing</a>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-plug"></span>
+						<h3>Instrumentation</h3>
+						<p>Extensive experience using electronic instrumentation in a laboratory setting</p>
+						<a class="button button-small">Oscilloscope</a> <a class="button button-small">Multimeter</a> <a
+							class="button button-small">Function generator</a> <a class="button button-small">Power
+							supply</a>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-desktop"></span>
+						<h3>Embedded computing</h3>
+						<p>Experience using embedded computing units</p>
+						<a class="button button-small">Arduino</a> <a class="button button-small">Raspberry Pi</a> <a
+							class="button button-small">NVIDIA Jetson</a>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-globe"></span>
+						<h3>Web</h3>
+						<p>Basic notions of (mainly front-end) web development</p>
+						<a class="button button-small">HTML</a> <a class="button button-small">CSS</a> <a
+							class="button button-small">JavaScript</a>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-git"></span>
+						<h3>Git</h3>
+						<p>Experience in distributed version controlling for collaborative group work</p>
+						<a class="button button-small">GitHub</a> <a class="button button-small">GitLab</a> <a
+							class="button button-small">CI/CD</a>
 
 					</section>
-
-				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Technical skills</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon solid style2 major fa-code"></span>
-									<h3>Programming</h3>
-									<p>Advanced knowledge of object-oriented programming and algorithms in C, C++, Java, and Python</p>
-									<a class="button button-small" font-size="0.5rem">Algorithms</a> <a class="button button-small">Object-oriented</a> <a class="button button-small">Databases</a>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Data science</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Electronics</h3>
-									<p>General knowledge of circuit theory and analysis.</p>
-									<a class="button button-small">Analog electronics</a> <a class="button button-small">Digital electronics</a>
-								</section>
-								<section>
-									<span class="icon style2 major fa-python"></span>
-									<h3>Python</h3>
-									<p>Advanced programming in Python and usual libraries</p>
-									<a class="button button-small">NumPy</a> <a class="button button-small">pandas</a> <a class="button button-small">OpenCV</a> <a class="button button-small">PyTorch</a> <a class="button button-small">scikit-learn</a>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Mathematics</h3>
-									<p>Notions of theoretical mathematics and applied mathematics in Python</p>
-									<a class="button button-small">Machine learning</a> <a class="button button-small">Statistics</a> <a class="button button-small">Optimization</a> <a class="button button-small">Image processing</a> <a class="button button-small">Signal processing</a>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-plug"></span>
-									<h3>Instrumentation</h3>
-									<p>Extensive experience using electronic instrumentation in a laboratory setting</p>
-									<a class="button button-small">Oscilloscope</a> <a class="button button-small">Multimeter</a> <a class="button button-small">Function generator</a> <a class="button button-small">Power supply</a>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Embedded computing</h3>
-									<p>Experience using embedded computing units</p>
-									<a class="button button-small">Arduino</a> <a class="button button-small">Raspberry Pi</a> <a class="button button-small">NVIDIA Jetson</a>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-globe"></span>
-									<h3>Web</h3>
-									<p>Basic notions of (mainly front-end) web development</p>
-									<a class="button button-small">HTML</a> <a class="button button-small">CSS</a> <a class="button button-small">JavaScript</a>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-git"></span>
-									<h3>Git</h3>
-									<p>Experience in distributed version controlling for collaborative group work</p>
-									<a class="button button-small">GitHub</a> <a class="button button-small">GitLab</a> <a class="button button-small">CI/CD</a>
-
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-brain"></span>
-									<h3>Artificial intelligence</h3>
-									<p>Machine learning</p>
-									<a class="button button-small">Graph theory</a> <a class="button button-small">Search algorithms</a> <a class="button button-small">Genetic algorithms</a> <a class="button button-small">Machine learning</a>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
-						</div>
+					<section>
+						<span class="icon solid style2 major fa-brain"></span>
+						<h3>Artificial intelligence</h3>
+						<p>Machine learning</p>
+						<a class="button button-small">Graph theory</a> <a class="button button-small">Search
+							algorithms</a> <a class="button button-small">Genetic algorithms</a> <a
+							class="button button-small">Machine learning</a>
 					</section>
-
-				<!-- Seven -->
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-
-						</div>
+					<section>
+						<span class="icon solid style2 major fa-envelope"></span>
+						<h3>Ultrices</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 					</section>
+					<section>
+						<span class="icon style2 major fa-gem"></span>
+						<h3>Lorem</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
+							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+					</section>
+				</div>
+			</div>
+		</section>
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://github.com/lfoyer" class="icon brands style2 fa-github"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/laurent-foyer/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:laurent.me.foyer@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-							<p>&copy; Laurent Foyer. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		<!-- Seven -->
+		<section class="wrapper style1 align-center">
+			<div class="inner medium">
+				<h2>Get in touch</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" value="" />
 						</div>
-					</footer>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" value="" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6"></textarea>
+						</div>
+					</div>
+					<ul class="actions special">
+						<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+					</ul>
+				</form>
 
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script type="module">
-				import * as THREE from 'three';
-				import { OrbitControls } from 'OrbitControls';
-				import { GLTFLoader } from 'GLTFLoader';
-			  
-				// Select the first canvas
-				const canvas1 = document.getElementById('threejs-canvas-1');
-				
-				// Create a scene for the first canvas
-				const scene1 = new THREE.Scene();
-				
-				// Create a camera for the first canvas
-				const camera1 = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
-				camera1.position.z = 2;
-				
-				// Create a renderer for the first canvas
-				const renderer1 = new THREE.WebGLRenderer({ canvas: canvas1, alpha: true });
-				renderer1.setPixelRatio(window.devicePixelRatio);
-				renderer1.setSize(canvas1.clientWidth, canvas1.clientHeight, false);
-				renderer1.setClearColor(0xffffff, 1); // 1 is the opacity, so 1 means fully opaque
-				camera1.aspect = canvas1.clientWidth / canvas1.clientHeight;
+		<!-- Footer -->
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://github.com/lfoyer" class="icon brands style2 fa-github"><span
+								class="label">Twitter</span></a></li>
+					<li><a href="https://www.linkedin.com/in/laurent-foyer/"
+							class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:laurent.me.foyer@gmail.com" class="icon style2 fa-envelope"><span
+								class="label">Email</span></a></li>
+				</ul>
+				<p>&copy; Laurent Foyer. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				<a id="funky-link" href="#" style="display:none;font-size:0.9em;opacity:0.6;text-decoration:underline;cursor:pointer;">make this website funky</a>
+				<audio id="funky-audio" src="assets/music/funk.mp3"></audio>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script type="module">
+		import * as THREE from 'three';
+		import { OrbitControls } from 'OrbitControls';
+		import { GLTFLoader } from 'GLTFLoader';
+
+		// Select the first canvas
+		const canvas1 = document.getElementById('threejs-canvas-1');
+
+		// Create a scene for the first canvas
+		const scene1 = new THREE.Scene();
+
+		// Create a camera for the first canvas
+		const camera1 = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+		camera1.position.z = 2;
+
+		// Create a renderer for the first canvas
+		const renderer1 = new THREE.WebGLRenderer({ canvas: canvas1, alpha: true });
+		renderer1.setPixelRatio(window.devicePixelRatio);
+		renderer1.setSize(canvas1.clientWidth, canvas1.clientHeight, false);
+		renderer1.setClearColor(0xffffff, 1); // 1 is the opacity, so 1 means fully opaque
+		camera1.aspect = canvas1.clientWidth / canvas1.clientHeight;
+		camera1.updateProjectionMatrix();
+
+		// Orbit Controls for the first canvas
+		const controls1 = new OrbitControls(camera1, renderer1.domElement);
+		controls1.enableDamping = true; // Smooth interaction
+		controls1.dampingFactor = 0.05;
+
+		// Declare the model variable for the first canvas
+		let model1;
+
+		// Load the GLTF model for the first canvas
+		const loader1 = new GLTFLoader();
+		loader1.load(
+			'https://raw.githubusercontent.com/lfoyer/lfoyer.github.io/main/images/arduino_uno/scene.gltf',
+			(gltf) => {
+				model1 = gltf.scene;
+				//model1.scale.set(7, 7, 7);
+				model1.scale.set(1.5, 1.5, 1.5);
+
+				const box = new THREE.Box3().setFromObject(model1);
+				const center = box.getCenter(new THREE.Vector3());
+
+				model1.position.x += (model1.position.x - center.x);
+				model1.position.y += (model1.position.y - center.y);
+				model1.position.z += (model1.position.z - center.z);
+
+				scene1.add(model1);
+			},
+			(xhr) => {
+				console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
+			},
+			(error) => {
+				console.error('Error loading model:', error);
+			}
+		);
+
+		// Add a light to the first scene
+		const light1 = new THREE.AmbientLight(0xffffff, 2);
+		light1.position.set(1, 1, 2).normalize();
+		scene1.add(light1);
+
+		// Create the second canvas
+		const canvas2 = document.getElementById('threejs-canvas-2');
+
+		// Create a scene for the second canvas
+		const scene2 = new THREE.Scene();
+
+		// Create a camera for the second canvas
+		const camera2 = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+		camera2.position.z = 2;
+
+		// Create a renderer for the second canvas
+		const renderer2 = new THREE.WebGLRenderer({ canvas: canvas2, alpha: true });
+		renderer2.setPixelRatio(window.devicePixelRatio);
+		renderer2.setSize(canvas2.clientWidth, canvas2.clientHeight, false);
+		renderer2.setClearColor(0xffffff, 1);
+		camera2.aspect = canvas2.clientWidth / canvas2.clientHeight;
+		camera2.updateProjectionMatrix();
+
+		// Orbit Controls for the second canvas
+		const controls2 = new OrbitControls(camera2, renderer2.domElement);
+		controls2.enableDamping = true;
+		controls2.dampingFactor = 0.05;
+
+		// Declare the model variable for the second canvas
+		let model2;
+
+		// Load the GLTF model for the second canvas
+		const loader2 = new GLTFLoader();
+		loader2.load(
+			'https://raw.githubusercontent.com/lfoyer/lfoyer.github.io/main/images/keyboard/scene.gltf',
+			(gltf) => {
+				model2 = gltf.scene;
+				model2.scale.set(9, 9, 9);
+
+				const box = new THREE.Box3().setFromObject(model2);
+				const center = box.getCenter(new THREE.Vector3());
+
+				model2.position.x += (model2.position.x - center.x);
+				model2.position.y += (model2.position.y - center.y);
+				model2.position.z += (model2.position.z - center.z);
+
+				model2.rotation.x += Math.PI / 2
+
+				scene2.add(model2);
+			},
+			(xhr) => {
+				console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
+			},
+			(error) => {
+				console.error('Error loading model:', error);
+			}
+		);
+
+		// Add a light to the second scene
+		const light2 = new THREE.AmbientLight(0xffffff, 2);
+		light2.position.set(1, 1, 2).normalize();
+		scene2.add(light2);
+
+		// Resize function for both canvases
+		function resizeRendererToDisplaySize() {
+			const width1 = canvas1.clientWidth;
+			const height1 = canvas1.clientHeight;
+
+			const width2 = canvas2.clientWidth;
+			const height2 = canvas2.clientHeight;
+
+			if (canvas1.width !== width1 || canvas1.height !== height1) {
+				renderer1.setSize(width1, height1, false);
+				camera1.aspect = width1 / height1;
 				camera1.updateProjectionMatrix();
-				
-				// Orbit Controls for the first canvas
-				const controls1 = new OrbitControls(camera1, renderer1.domElement);
-				controls1.enableDamping = true; // Smooth interaction
-				controls1.dampingFactor = 0.05;
-				
-				// Declare the model variable for the first canvas
-				let model1;
-			  
-				// Load the GLTF model for the first canvas
-				const loader1 = new GLTFLoader();
-				loader1.load(
-				  'https://raw.githubusercontent.com/lfoyer/lfoyer.github.io/main/images/10k_ohm_resistor/scene.gltf',
-				  (gltf) => {
-					model1 = gltf.scene;
-					model1.scale.set(7, 7, 7);
-			  
-					const box = new THREE.Box3().setFromObject(model1);
-					const center = box.getCenter(new THREE.Vector3());
-			  
-					model1.position.x += (model1.position.x - center.x);
-					model1.position.y += (model1.position.y - center.y);
-					model1.position.z += (model1.position.z - center.z);
-			  
-					scene1.add(model1);
-				  },
-				  (xhr) => {
-					console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
-				  },
-				  (error) => {
-					console.error('Error loading model:', error);
-				  }
-				);
-			  
-				// Add a light to the first scene
-				const light1 = new THREE.AmbientLight(0xffffff, 2);
-				light1.position.set(1, 1, 2).normalize();
-				scene1.add(light1);
-			  
-				// Create the second canvas
-				const canvas2 = document.getElementById('threejs-canvas-2');
-				
-				// Create a scene for the second canvas
-				const scene2 = new THREE.Scene();
-				
-				// Create a camera for the second canvas
-				const camera2 = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
-				camera2.position.z = 2;
-				
-				// Create a renderer for the second canvas
-				const renderer2 = new THREE.WebGLRenderer({ canvas: canvas2, alpha: true });
-				renderer2.setPixelRatio(window.devicePixelRatio);
-				renderer2.setSize(canvas2.clientWidth, canvas2.clientHeight, false);
-				renderer2.setClearColor(0xffffff, 1);
-				camera2.aspect = canvas2.clientWidth / canvas2.clientHeight;
-				camera2.updateProjectionMatrix();
-				
-				// Orbit Controls for the second canvas
-				const controls2 = new OrbitControls(camera2, renderer2.domElement);
-				controls2.enableDamping = true;
-				controls2.dampingFactor = 0.05;
-				
-				// Declare the model variable for the second canvas
-				let model2;
-			  
-				// Load the GLTF model for the second canvas
-				const loader2 = new GLTFLoader();
-				loader2.load(
-				  'https://raw.githubusercontent.com/lfoyer/lfoyer.github.io/main/images/keyboard/scene.gltf',
-				  (gltf) => {
-					model2 = gltf.scene;
-					model2.scale.set(9, 9, 9);
-			  
-					const box = new THREE.Box3().setFromObject(model2);
-					const center = box.getCenter(new THREE.Vector3());
-			  
-					model2.position.x += (model2.position.x - center.x);
-					model2.position.y += (model2.position.y - center.y);
-					model2.position.z += (model2.position.z - center.z);
+			}
 
-					model2.rotation.x += Math.PI / 2
-			  
-					scene2.add(model2);
-				  },
-				  (xhr) => {
-					console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
-				  },
-				  (error) => {
-					console.error('Error loading model:', error);
-				  }
-				);
-			  
-				// Add a light to the second scene
-				const light2 = new THREE.AmbientLight(0xffffff, 2);
-				light2.position.set(1, 1, 2).normalize();
-				scene2.add(light2);
-			  
-				// Resize function for both canvases
-				function resizeRendererToDisplaySize() {
-				  const width1 = canvas1.clientWidth;
-				  const height1 = canvas1.clientHeight;
-			  
-				  const width2 = canvas2.clientWidth;
-				  const height2 = canvas2.clientHeight;
-			  
-				  if (canvas1.width !== width1 || canvas1.height !== height1) {
-					renderer1.setSize(width1, height1, false);
-					camera1.aspect = width1 / height1;
-					camera1.updateProjectionMatrix();
-				  }
-			  
-				  if (canvas2.width !== width2 || canvas2.height !== height2) {
-					renderer2.setSize(width2, height2, false);
-					camera2.aspect = width2 / height2;
-					camera2.updateProjectionMatrix();
-				  }
-				}
-			  
-				// Animation loop for both canvases
-				function animate() {
-				  requestAnimationFrame(animate);
-			  
-				  resizeRendererToDisplaySize();
-			  
-				  if (model1) {
-					//model1.rotation.x += 0.01;
-					//model1.rotation.y += 0.01;
-				  }
-			  
-				  if (model2) {
-					//model2.rotation.x += 0.01;
-					//model2.rotation.y += 0.01;
-				  }
-			  
-				  controls1.update();
-				  controls2.update();
-			  
-				  renderer1.render(scene1, camera1);
-				  renderer2.render(scene2, camera2);
-				}
-			  
-				// Handle window resizing
-				window.addEventListener('resize', resizeRendererToDisplaySize);
-			  
-				animate();
-			  </script>
-			  
-		</body>
+			if (canvas2.width !== width2 || canvas2.height !== height2) {
+				renderer2.setSize(width2, height2, false);
+				camera2.aspect = width2 / height2;
+				camera2.updateProjectionMatrix();
+			}
+		}
+
+		// Animation loop for both canvases
+		function animate() {
+			requestAnimationFrame(animate);
+
+			resizeRendererToDisplaySize();
+
+			if (model1) {
+				//model1.rotation.x += 0.01;
+				//model1.rotation.y += 0.01;
+			}
+
+			if (model2) {
+				//model2.rotation.x += 0.01;
+				//model2.rotation.y += 0.01;
+			}
+
+			controls1.update();
+			controls2.update();
+
+			renderer1.render(scene1, camera1);
+			renderer2.render(scene2, camera2);
+		}
+
+		// Handle window resizing
+		window.addEventListener('resize', resizeRendererToDisplaySize);
+
+		animate();
+	</script>
+
+</body>
+
 </html>

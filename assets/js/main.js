@@ -339,3 +339,96 @@
 						});
 
 })(jQuery);
+
+// Open modal
+document.querySelectorAll('.role-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const modalId = item.getAttribute('data-modal');
+    document.getElementById(modalId).style.display = 'flex';
+  });
+});
+
+// Close modal
+document.querySelectorAll('.close').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.modal-overlay').style.display = 'none';
+  });
+});
+
+// Close on outside click
+window.addEventListener('click', e => {
+  if (e.target.classList.contains('modal-overlay')) {
+    e.target.style.display = 'none';
+  }
+});
+
+document.querySelectorAll('.read-more-toggle').forEach(toggleBtn => {
+  const readMoreContent = toggleBtn.nextElementSibling;
+
+  toggleBtn.addEventListener('click', () => {
+    readMoreContent.classList.toggle('expanded');
+    toggleBtn.classList.toggle('active');
+  });
+
+  toggleBtn.addEventListener('keypress', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleBtn.click();
+    }
+  });
+});
+
+
+let lastF = 0;
+document.addEventListener('keydown', function(e) {
+    if (e.key.toLowerCase() === 'f') {
+        const now = Date.now();
+        if (now - lastF < 500) {
+            document.getElementById('funky-link').style.display = 'inline';
+        }
+        lastF = now;
+    }
+});
+
+document.getElementById('funky-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    // Play music
+    const audio = document.getElementById('funky-audio');
+    audio.volume = 0.5;
+    audio.play();
+
+    // Funky background
+    let hue = 0;
+    const funkyBg = setInterval(() => {
+        document.body.style.background = `linear-gradient(135deg, hsl(${hue},90%,70%), hsl(${(hue+90)%360},90%,70%))`;
+        hue = (hue + 3) % 360;
+    }, 60);
+
+    // Funky text animation
+    document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, a, span, li, label').forEach(el => {
+        el.classList.add('funky-text');
+    });
+
+    // Funky CSS
+    const style = document.createElement('style');
+    style.innerHTML = `
+    @keyframes funkyMove {
+        0% { transform: translateY(0) rotate(0deg) scale(1);}
+        20% { transform: translateY(-5px) rotate(-2deg) scale(1.05);}
+        40% { transform: translateY(5px) rotate(2deg) scale(0.95);}
+        60% { transform: translateY(-5px) rotate(-2deg) scale(1.1);}
+        80% { transform: translateY(5px) rotate(2deg) scale(0.9);}
+        100% { transform: translateY(0) rotate(0deg) scale(1);}
+    }
+    .funky-text {
+        animation: funkyMove 1s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
+        color: #fff !important;
+        text-shadow: 0 0 8px #000, 0 0 20px #ff0, 0 0 30px #0ff;
+        transition: color 0.2s;
+    }
+    `;
+    document.head.appendChild(style);
+
+    // Hide link after click
+    this.style.display = 'none';
+});
