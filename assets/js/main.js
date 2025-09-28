@@ -380,6 +380,9 @@ document.querySelectorAll('.read-more-toggle').forEach(toggleBtn => {
 
 
 let lastF = 0;
+let funkyBg = null;
+let funkyStyle = null;
+
 document.addEventListener('keydown', function(e) {
     if (e.key.toLowerCase() === 'f') {
         const now = Date.now();
@@ -392,14 +395,13 @@ document.addEventListener('keydown', function(e) {
 
 document.getElementById('funky-link').addEventListener('click', function(e) {
     e.preventDefault();
-    // Play music
     const audio = document.getElementById('funky-audio');
     audio.volume = 0.5;
     audio.play();
 
     // Funky background
     let hue = 0;
-    const funkyBg = setInterval(() => {
+    funkyBg = setInterval(() => {
         document.body.style.background = `linear-gradient(135deg, hsl(${hue},90%,70%), hsl(${(hue+90)%360},90%,70%))`;
         hue = (hue + 3) % 360;
     }, 60);
@@ -410,8 +412,8 @@ document.getElementById('funky-link').addEventListener('click', function(e) {
     });
 
     // Funky CSS
-    const style = document.createElement('style');
-    style.innerHTML = `
+    funkyStyle = document.createElement('style');
+    funkyStyle.innerHTML = `
     @keyframes funkyMove {
         0% { transform: translateY(0) rotate(0deg) scale(1);}
         20% { transform: translateY(-5px) rotate(-2deg) scale(1.05);}
@@ -427,8 +429,22 @@ document.getElementById('funky-link').addEventListener('click', function(e) {
         transition: color 0.2s;
     }
     `;
-    document.head.appendChild(style);
+    document.head.appendChild(funkyStyle);
 
     // Hide link after click
     this.style.display = 'none';
+
+    // When music ends, revert everything
+    audio.onended = function() {
+        clearInterval(funkyBg);
+        document.body.style.background = "";
+        document.querySelectorAll('.funky-text').forEach(el => {
+            el.classList.remove('funky-text');
+        });
+        if (funkyStyle && funkyStyle.parentNode) {
+            funkyStyle.parentNode.removeChild(funkyStyle);
+        }
+        // Optionally, show the link again for replay:
+        // document.getElementById('funky-link').style.display = 'inline';
+    };
 });
