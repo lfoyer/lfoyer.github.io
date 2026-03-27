@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Lane-Based PCB</title>
+    <style>
+        body { margin: 0; background: #ffffff; overflow: hidden; }
+        #container-2 { width: 100vw; height: 100vh; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+
+<div id="container-2">
+    <canvas id="threejs-canvas-2"></canvas>
+</div>
+
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+    }
+</script>
+
+<script type="module">
+    import * as THREE from 'three';
+
+    (function() {
+        const canvas = document.getElementById('threejs-canvas-2');
+        const container = document.getElementById('container-2');
+
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xffffff); 
+
+        // CAMERA: Tilted at an angle for a sophisticated "Desktop" look
+        const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, -18, 32); // Lower Y and Z creates the tilt
+        camera.lookAt(0, 0, 0);
+
+        const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
+
+        const COLOR_FG = 0xffb300;     
+        const COLOR_TRACE = 0xf2f2f2;  
+
+        const wireCount = 12; // Fewer wires + lane logic = less overlap
+        const signals = [];
+        
+        // --- Lane Logic: Assigning a unique Y-lane to each wire ---
+        const lanes = [];
+        for(let i=0; i<wireCount; i++) {
+            lanes.push((i - (wireCount/2)) * 2.5); // Spaced lanes
+        }
+
+        function generatePCBPath(laneY) {
+            const points = [];
+            let current = new THREE.Vector3(-25, laneY, 0);
+            points.push(current.clone());
+
+            const segments = 5;
+            for (let i = 0; i < segments; i++) {
+                // Move Right (X)
+                current.x += 6 + Math.random() * 4;
+                points.push(current.clone());
+
+                // Slight 45-degree "jogs" within the lane
+                if (Math.random() > 0.5) {
+                    const shift = (Math.random() > 0.5 ? 1 : -1) * 1.2;
+                    points.push(current.clone()); 
+                    current.x += 1.5; 
+                    current.y += shift; // Move slightly but stay near original lane
+                    points.push(current.clone());
+                    
+                    // Return to lane or stay at shift
+                    current.x += 3;
+                    points.push(current.clone());
+                }
+            }
+            return new THREE.CatmullRomCurve3(points, false, 'catmullrom', 0.02);
+        }
+
+        function createSignal(index) {
+            const path = generatePCBPath(lanes[index]);
+            
+            // Background trace
+            const wireGeo = new THREE.BufferGeometry().setFromPoints(path.getPoints(100));
+            const wireMat = new THREE.LineBasicMaterial({ color: COLOR_TRACE });
+            scene.add(new THREE.Line(wireGeo, wireMat));
+
+            // Sphere Head
+            const headGeo = new THREE.SphereGeometry(0.28, 20, 20);
+            const headMat = new THREE.MeshBasicMaterial({ color: COLOR_FG });
+            const head = new THREE.Mesh(headGeo, headMat);
+
+            // Ribbon Trail
+            const trailLen = 28; 
+            const trailGeo = new THREE.PlaneGeometry(0.22, 1, 1, trailLen);
+            const trailMat = new THREE.MeshBasicMaterial({
+                color: COLOR_FG,
+                transparent: true,
+                opacity: 0.4,
+                side: THREE.DoubleSide
+            });
+
+            const alphas = new Float32Array(trailGeo.attributes.position.count);
+            for (let i = 0; i < alphas.length; i++) {
+                alphas[i] = 1.0 - (Math.floor(i / 2) / trailLen);
+            }
+            trailGeo.setAttribute('vAlpha', new THREE.BufferAttribute(alphas, 1));
+            
+            trailMat.onBeforeCompile = (shader) => {
+                shader.vertexShader = `attribute float vAlpha; varying float vA; ${shader.vertexShader}`.replace(`void main() {`, `void main() { vA = vAlpha;`);
+                shader.fragmentShader = `varying float vA; ${shader.fragmentShader}`.replace(`vec4 diffuseColor = vec4( diffuse, opacity );`, `vec4 diffuseColor = vec4( diffuse, opacity * vA );`);
+            };
+
+            const trail = new THREE.Mesh(trailGeo, trailMat);
+            scene.add(head, trail);
+
+            const history = Array.from({ length: trailLen + 1 }, () => new THREE.Vector3(-100, lanes[index], 0));
+
+            return {
+                head, trail, path,
+                progress: Math.random() * -1.5, 
+                speed: 0.0015 + Math.random() * 0.0015,
+                history
+            };
+        }
+
+        for (let i = 0; i < wireCount; i++) signals.push(createSignal(i));
+
+        const setSize = () => {
+            const w = window.innerWidth;
+            const h = window.innerHeight;
+            renderer.setSize(w, h);
+            camera.aspect = w / h;
+            camera.updateProjectionMatrix();
+        };
+        window.addEventListener('resize', setSize);
+        setSize();
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            signals.forEach(s => {
+                s.progress += s.speed;
+                
+                if (s.progress > 1.4) {
+                    s.progress = -0.1; 
+                    s.history.forEach(h => h.set(-100, 0, 0));
+                }
+
+                if (s.progress >= 0 && s.progress <= 1) {
+                    const pos = s.path.getPointAt(s.progress);
+                    s.head.position.copy(pos);
+                    s.head.visible = true;
+                } else {
+                    s.head.visible = false;
+                }
+
+                if (s.progress >= 0) {
+                    const currentPos = s.progress <= 1 ? s.path.getPointAt(s.progress) : s.path.getPointAt(1);
+                    for (let i = s.history.length - 1; i > 0; i--) {
+                        s.history[i].copy(s.history[i - 1]);
+                    }
+                    s.history[0].copy(currentPos);
+                }
+
+                const posAttr = s.trail.geometry.attributes.position;
+                for (let i = 0; i < s.history.length; i++) {
+                    const p = s.history[i];
+                    // Flat ribbon offset
+                    posAttr.setXYZ(i * 2, p.x, p.y - 0.12, p.z);
+                    posAttr.setXYZ(i * 2 + 1, p.x, p.y + 0.12, p.z);
+                }
+                posAttr.needsUpdate = true;
+            });
+
+            renderer.render(scene, camera);
+        }
+        animate();
+    })();
+</script>
+</body>
+</html>

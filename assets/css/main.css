@@ -9269,3 +9269,208 @@ section.timeline-wrapper {
 .timeline-entry a:hover img {
 	transform: scale(1.02);
 }
+
+.image {
+    background-color: #f0f0f0; /* Set your desired hex color here */
+    /* or use a gradient */
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+}
+
+#threejs-canvas-1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Force the Banner Image container to behave as a grid wrapper */
+#experience-banner .image {
+    background: #ffffff !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    display: block !important;
+}
+
+#custom-exp-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; 
+    grid-template-rows: 1fr 1fr !important;
+    width: 100% !important;
+    height: 100% !important;
+    gap: 0 !important;
+}
+
+/* Sharp Edged Cards */
+.exp-card {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-end; /* Text at the bottom for a modern look */
+    padding: 30px !important;
+    border-radius: 0 !important;
+    cursor: pointer;
+    transition: background 0.25s ease !important;
+    border: 0.5px solid rgba(0,0,0,0.03) !important; /* Subtle divider */
+}
+
+/* 6 Month span */
+.span-big {
+    grid-row: span 2 !important;
+}
+
+/* Shades of Gray */
+.shade-1 { background-color: #f7f7f7 !important; }
+.shade-2 { background-color: #eeeeee !important; }
+.shade-3 { background-color: #e4e4e4 !important; }
+.shade-4 { background-color: #dbdbdb !important; }
+
+/* Hover Highlight - Darker Gray */
+.exp-card:hover {
+    background-color: #cccccc !important;
+}
+
+/* Typography */
+.exp-content .location {
+    font-size: 0.7rem !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px !important;
+    color: #888 !important;
+}
+
+.exp-content h3 {
+    font-size: 1.4rem !important;
+    margin: 0 !important;
+    font-weight: 900 !important;
+    color: #111 !important;
+}
+
+.exp-content .role {
+    font-size: 1rem !important;
+    margin: 5px 0 !important;
+    color: #444 !important;
+}
+
+.exp-content .duration {
+    font-size: 0.8rem !important;
+    opacity: 0.6;
+}
+
+/* Responsive Fix for Banner style */
+@media screen and (max-width: 1280px) {
+    #experience-banner .image {
+        height: 50vh !important; /* On smaller screens, grid takes bottom half */
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #custom-exp-grid {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+    }
+    .span-big { grid-row: span 1 !important; }
+}
+
+/* 1. Force the Section to exactly 60% of the browser height */
+#experience-banner.banner.style1.fullscreen {
+    height: 60vh !important;
+    min-height: 60vh !important;
+    max-height: 60vh !important;
+    padding: 0 !important; /* This removes the huge top/bottom gaps holding it open */
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+/* 2. Fix the Left Content (The Text) */
+#experience-banner .content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    padding: 1.5rem 2.5rem !important; /* Shrunk padding for the 60% height */
+    box-sizing: border-box !important;
+}
+
+/* 3. Fix the Right Container (The Grid) */
+#experience-banner .image {
+    height: 100% !important;
+    min-height: 100% !important;
+    max-height: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+/* 4. Ensure the Grid stays as a 2x2 inside the 60vh height */
+#custom-exp-grid {
+    height: 100% !important;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    gap: 0 !important;
+}
+
+/* 5. Shrink the card internal space so text doesn't overflow */
+.exp-card {
+    padding: 1rem !important; /* Minimal padding for the shorter boxes */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+}
+
+/* 6. Scale down text so it doesn't look cramped */
+.exp-content h3 {
+    font-size: 1rem !important;
+    margin-bottom: 2px !important;
+}
+.exp-content .role {
+    font-size: 0.85rem !important;
+}
+.exp-content .location {
+    font-size: 0.6rem !important;
+}
+
+/* Modern Steel Blue - Noticeable but Muted */
+.exp-card.card-more {
+    background-color: #5c85bb !important; /* A solid, mid-tone slate blue */
+    border: none !important;
+    display: flex !important;
+    align-items: center !important; 
+    justify-content: center !important; 
+    text-align: center !important;
+    transition: background 0.2s ease-in-out !important;
+}
+
+/* Hover: Slightly deeper blue to show it's active */
+.exp-card.card-more:hover {
+    background-color: #4a72a8 !important; /* Darker, richer blue on hover */
+}
+
+/* Centering the content */
+.exp-content.centered {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    width: 100%;
+}
+
+/* Typography - White text for readability against the blue */
+.card-more h3 {
+    color: #ffffff !important; 
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 !important;
+}
+
+/* The Plus Icon - Subtle white */
+.plus-icon {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 1.4rem !important;
+    margin-top: 5px !important;
+    font-weight: 300 !important;
+}
