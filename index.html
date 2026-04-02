@@ -15,14 +15,12 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 	<script type="importmap">
-			{
-			  "imports": {
-				"three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
-				"OrbitControls": "https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/controls/OrbitControls.js",
-				"GLTFLoader": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/loaders/GLTFLoader.js"
-			  }
+		{
+			"imports": {
+			"three": "https://unpkg.com/three@latest/build/three.module.js"
 			}
-		  </script>
+		}
+	</script>
 	<script>
 		//alert("This website is still under construction. Information presented may be incomplete or subject to change.")
 	</script>
@@ -39,6 +37,16 @@
 			<div class="content">
 				<h1>Laurent Foyer</h1>
 				<p class="major">Graduate Engineer in Computer Science</p>
+
+				<ul class="icons">
+					<li><a href="https://github.com/lfoyer" class="icon brands fa-github"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/laurent-foyer/" class="icon brands fa-linkedin-in"><span
+								class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:laurent.me.foyer@gmail.com" class="icon fa-envelope"><span
+								class="label">Email</span></a></li>
+				</ul>
+
 				<ul class="actions stacked">
 					<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
 				</ul>
@@ -55,9 +63,14 @@
 				<h2>Computing, electronics, and more</h2>
 				<p>With a background in both computer science and electrical engineering, I aim to apply my skills in
 					meaningful fields at the intersection of software, hardware, and physics.</p>
-				<ul class="actions stacked">
-					
-					<li><a href="#data" class="button big wide smooth-scroll-middle">Next</a><a href="CV_LFoyer_en.pdf" class="button">View CV (pdf)</a></li>
+
+				<ul class="actions stacked" style="margin-top: 0rem !important;">
+					<li>
+						<a href="#data" class="button big wide smooth-scroll-middle">Next</a>
+						<a href="CV_LFoyer_en.pdf" target="_blank" class="button btn-cv">
+							<i class="fas fa-file-pdf"></i> View CV
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="image">
@@ -65,10 +78,15 @@
 			</div>
 		</section>
 
-		<section class="spotlight style5 orient-left content-align-left image-position-center onscroll-image-fade-in" id="data">
+		<section class="spotlight style5 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			id="data">
 			<div class="content">
 				<h2>Data</h2>
-				<p>My main asset is harnessing data.</p>
+				<p>I build the pipelines that process raw information into usable datasets. My focus is on applying
+					statistical models and mathematical optimization to solve complex problems across
+					<strong>distributed
+						systems</strong>.
+				</p>
 				<ul class="actions stacked">
 					<li><a href="#electronics" class="button big wide smooth-scroll-middle">Next</a></li>
 				</ul>
@@ -78,12 +96,16 @@
 			</div>
 		</section>
 
-		<section class="spotlight style5 orient-left content-align-left image-position-center onscroll-image-fade-in" id="electronics">
+		<section class="spotlight style5 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="electronics">
 			<div class="content">
 				<h2>Electronics</h2>
-				<p>Electronics stufff.</p>
+				<p>Bridging the gap between software and the physical world. I specialize in <strong>embedded systems
+						and sensor
+						integration</strong>, using lab instrumentation to interface digital logic with real-world
+					hardware.</p>
 				<ul class="actions stacked">
-					<li><a href="#programming" class="button big wide smooth-scroll-middle">Next</a></li>
+					<li><a href="#ml" class="button big wide smooth-scroll-middle">Next</a></li>
 				</ul>
 			</div>
 			<div class="image">
@@ -91,25 +113,86 @@
 			</div>
 		</section>
 
-		<section class="spotlight style5 orient-left content-align-left image-position-center onscroll-image-fade-in" id="programming">
+		<section class="spotlight style5 orient-left content-align-left image-position-center onscroll-image-fade-in"
+			id="ml">
 			<div class="content">
-				<h2>Programming</h2>
-				<p>Programming stufff.</p>
+				<h2>Intelligence</h2>
+				<p>
+					I design and train <strong>machine learning</strong> models and <strong>neural networks</strong> for
+					real-world performance. From deep
+					learning to algorithmic optimization, I build systems that learn from data and scale efficiently.
+				</p>
 				<ul class="actions stacked">
-					<li><a href="#experience" class="button big wide smooth-scroll-middle">Next</a></li>
+					<li><a href="#education" class="button big wide smooth-scroll-middle">Next</a></li>
 				</ul>
 			</div>
 			<div class="image">
-				<canvas id="threejs-canvas-2"></canvas>
+				<canvas id="threejs-canvas-3"></canvas>
 			</div>
 		</section>
 
-		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="experience">
+		<section class="wrapper style1 align-left" id="education">
+			<div class="inner">
+				<div class="index align-left">
+					<section>
+						<header>
+							<h2>Education</h2>
+							<p class="major">Academic background.</p>
+							<ul class="actions stacked">
+								<li><a href="#experience" class="button big wide smooth-scroll-middle">Next</a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<div class="edu-vertical-stack">
+
+								<div class="edu-bw-card edu-gray-1">
+									<div class="edu-card-left">
+										<span class="location">Rouen, FR</span>
+										<h3>National Institute of Applied Sciences of Rouen</h3>
+									</div>
+									<div class="edu-card-right">
+										<p class="degree">MSc in Computer Science</p>
+										<p class="duration">2022 – 2026</p>
+									</div>
+								</div>
+
+								<div class="edu-bw-card edu-gray-2">
+									<div class="edu-card-left">
+										<span class="location">Rouen, FR</span>
+										<h3>Institute of Technology of Rouen</h3>
+									</div>
+									<div class="edu-card-right">
+										<p class="degree">Associate Degree in Electrical Engineering</p>
+										<p class="duration">2020 – 2022</p>
+									</div>
+								</div>
+
+								<div class="edu-bw-card edu-gray-3">
+									<div class="edu-card-left">
+										<span class="location">Buenos Aires, AR</span>
+										<h3>Institute of Technology of Buenos Aires</h3>
+									</div>
+									<div class="edu-card-right">
+										<p class="degree">Computer Science (Exchange)</p>
+										<p class="duration">2024</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+			id="experience">
 			<div class="content">
 				<h1>Experience</h1>
-				<p class="major">A timeline of my professional journey, sized by impact and duration.</p>
+				<p class="major">A timeline of my professional journey.</p>
 				<ul class="actions stacked">
-					<li><a href="#next-section" class="button big wide smooth-scroll-middle">View Projects</a></li>
+					<li><a href="#skills" class="button big wide smooth-scroll">Next</a></li>
 				</ul>
 			</div>
 			<div class="image">
@@ -137,7 +220,7 @@
 							<p class="location">Frascati, IT</p>
 							<h3>National Institute for Nuclear Physics</h3>
 							<p class="role">Data Analyst Intern</p>
-							<p class="duration">3 Months</p>
+							<p class="duration">1 Month</p>
 						</div>
 					</div>
 
@@ -146,13 +229,13 @@
 							<p class="location">Vienna, AT</p>
 							<h3>Austrian Academy of Sciences</h3>
 							<p class="role">Electronics Intern</p>
-							<p class="duration">1 Month</p>
+							<p class="duration">3 Months</p>
 						</div>
 					</div>
 
 					<div class="exp-card card-more" onclick="openModal('more-info')">
 						<div class="exp-content centered">
-							<h3>More</h3>
+							<h3></h3>
 						</div>
 					</div>
 				</div>
@@ -167,7 +250,8 @@
 				</a>
 				<div class="caption">
 					<h3>ASML Cleanroom</h3>
-					<p>Inside one of ASML's cleanroom facilities in Veldhoven <br> November 2025</p></p>
+					<p>Inside one of ASML's cleanroom facilities in Veldhoven <br> November 2025</p>
+					</p>
 					<ul class="actions fixed">
 						<li><span class="button small">Details</span></li>
 					</ul>
@@ -314,106 +398,101 @@
 		</section>
 
 		<!-- Six -->
-		<section class="wrapper style1 align-center">
+		<section class="wrapper style1 align-center" id="skills">
 			<div class="inner">
 				<h2>Technical Skills</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit
-					amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-					pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+				<p>My background spans the entire technical stack: from high-level software and machine learning to
+					electronic systems and hardware integration.</p>
 				<div class="items style1 medium onscroll-fade-in">
 					<section>
 						<span class="icon solid style2 major fa-code"></span>
 						<h3>Programming</h3>
-						<p>Advanced knowledge of object-oriented programming and algorithms in C, C++, Java, and Python
+						<p>Solid foundation in object-oriented logic and algorithmic problem-solving.
 						</p>
-						<a class="button button-small" font-size="0.5rem">Algorithms</a> <a
-							class="button button-small">Object-oriented</a> <a class="button button-small">Databases</a>
+						<a class="button button-small">Python</a>
+						<a class="button button-small">C</a>
+						<a class="button button-small">C++</a>
+						<a class="button button-small">Java</a>
+						<a class="button button-small">Algorithms</a>
 					</section>
 					<section>
 						<span class="icon solid style2 major fa-chart-bar"></span>
-						<h3>Data science</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
-							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+						<h3>Data Science</h3>
+						<p>Cleaning, transforming, and analyzing complex datasets to extract actionable insights.</p>
+						<a class="button button-small">pandas</a>
+						<a class="button button-small">NumPy</a>
+						<a class="button button-small">SQL</a>
+						<a class="button button-small">Matplotlib</a>
 					</section>
 					<section>
-						<span class="icon solid style2 major fa-bolt"></span>
-						<h3>Electronics</h3>
-						<p>General knowledge of circuit theory and analysis.</p>
-						<a class="button button-small">Analog electronics</a> <a class="button button-small">Digital
-							electronics</a>
+						<span class="icon solid style2 major fa-brain"></span>
+						<h3>Artificial Intelligence</h3>
+						<p>Implementation of machine learning models and classical AI search strategies.</p>
+						<a class="button button-small">scikit-learn</a>
+						<a class="button button-small">PyTorch</a>
+						<a class="button button-small">Computer Vision</a>
+						<a class="button button-small">Graph Theory</a>
 					</section>
 					<section>
-						<span class="icon style2 major fa-python"></span>
-						<h3>Python</h3>
-						<p>Advanced programming in Python and usual libraries</p>
-						<a class="button button-small">NumPy</a> <a class="button button-small">pandas</a> <a
-							class="button button-small">OpenCV</a> <a class="button button-small">PyTorch</a> <a
-							class="button button-small">scikit-learn</a>
+						<span class="icon solid style2 major fa-wave-square"></span>
+						<h3>Electronics & Lab</h3>
+						<p>Theory and practice of circuit design, paired with hands-on laboratory debugging and hardware
+							testing.</p>
+						<div class="skills-btns">
+							<a class="button button-small">Analog</a>
+							<a class="button button-small">Digital</a>
+							<a class="button button-small">Circuit Analysis</a>
+							<a class="button button-small">Oscilloscope</a>
+							<a class="button button-small">Signal Generator</a>
+							<a class="button button-small">Multimeter</a>
+						</div>
 					</section>
 					<section>
-						<span class="icon solid style2 major fa-cog"></span>
+						<span class="icon solid style2 major fa-microchip"></span>
+						<h3>Embedded Systems</h3>
+						<p>Deploying software directly onto hardware units for real-world interaction.</p>
+						<a class="button button-small">Arduino</a>
+						<a class="button button-small">Raspberry Pi</a>
+						<a class="button button-small">NVIDIA Jetson</a>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-calculator"></span>
 						<h3>Mathematics</h3>
-						<p>Notions of theoretical mathematics and applied mathematics in Python</p>
-						<a class="button button-small">Machine learning</a> <a
-							class="button button-small">Statistics</a> <a class="button button-small">Optimization</a>
-						<a class="button button-small">Image processing</a> <a class="button button-small">Signal
-							processing</a>
+						<p>Applied mathematical concepts for engineering, optimization, and signal processing.</p>
+						<a class="button button-small">Statistics</a>
+						<a class="button button-small">Optimization</a>
+						<a class="button button-small">Signal Processing</a>
 					</section>
 					<section>
-						<span class="icon solid style2 major fa-plug"></span>
-						<h3>Instrumentation</h3>
-						<p>Extensive experience using electronic instrumentation in a laboratory setting</p>
-						<a class="button button-small">Oscilloscope</a> <a class="button button-small">Multimeter</a> <a
-							class="button button-small">Function generator</a> <a class="button button-small">Power
-							supply</a>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-desktop"></span>
-						<h3>Embedded computing</h3>
-						<p>Experience using embedded computing units</p>
-						<a class="button button-small">Arduino</a> <a class="button button-small">Raspberry Pi</a> <a
-							class="button button-small">NVIDIA Jetson</a>
+						<span class="icon brands style2 major fa-git"></span>
+						<h3>Git & Workflow</h3>
+						<p>Management of codebase versions and collaborative development environments.</p>
+						<a class="button button-small">Git</a>
+						<a class="button button-small">GitHub</a>
+						<a class="button button-small">Linux / Bash</a>
 					</section>
 					<section>
 						<span class="icon solid style2 major fa-globe"></span>
 						<h3>Web</h3>
-						<p>Basic notions of (mainly front-end) web development</p>
-						<a class="button button-small">HTML</a> <a class="button button-small">CSS</a> <a
-							class="button button-small">JavaScript</a>
+						<p>Fundamental understanding of front-end structure and styling for static sites.</p>
+						<a class="button button-small">HTML</a>
+						<a class="button button-small">CSS</a>
+						<a class="button button-small">JavaScript</a>
 					</section>
 					<section>
-						<span class="icon solid style2 major fa-git"></span>
-						<h3>Git</h3>
-						<p>Experience in distributed version controlling for collaborative group work</p>
-						<a class="button button-small">GitHub</a> <a class="button button-small">GitLab</a> <a
-							class="button button-small">CI/CD</a>
-
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-brain"></span>
-						<h3>Artificial intelligence</h3>
-						<p>Machine learning</p>
-						<a class="button button-small">Graph theory</a> <a class="button button-small">Search
-							algorithms</a> <a class="button button-small">Genetic algorithms</a> <a
-							class="button button-small">Machine learning</a>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-envelope"></span>
-						<h3>Ultrices</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
-							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					</section>
-					<section>
-						<span class="icon style2 major fa-gem"></span>
-						<h3>Lorem</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci
-							amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+						<span class="icon solid style2 major fa-language"></span>
+						<h3>Languages</h3>
+						<p>French-American dual citizen with experience in international work environments.</p>
+						<a class="button button-small">English (Native)</a>
+						<a class="button button-small">French (Native)</a>
+						<a class="button button-small">Spanish (Advanced)</a>
 					</section>
 				</div>
 			</div>
 		</section>
 
 		<!-- Seven -->
+		<!--
 		<section class="wrapper style1 align-center">
 			<div class="inner medium">
 				<h2>Get in touch</h2>
@@ -439,6 +518,7 @@
 
 			</div>
 		</section>
+		-->
 
 		<!-- Footer -->
 		<footer class="wrapper style1 align-center">
@@ -452,7 +532,9 @@
 								class="label">Email</span></a></li>
 				</ul>
 				<p>&copy; Laurent Foyer. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-				<a id="funky-link" href="#" style="display:none;font-size:0.9em;opacity:0.6;text-decoration:underline;cursor:pointer;">make this website funky</a>
+				<a id="funky-link" href="#"
+					style="display:none;font-size:0.9em;opacity:0.6;text-decoration:underline;cursor:pointer;">make this
+					website funky</a>
 				<audio id="funky-audio" src="assets/music/funk.mp3"></audio>
 			</div>
 		</footer>
@@ -483,7 +565,7 @@
 
 		const scene = new THREE.Scene();
 		const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-		
+
 		const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
 		camera.position.set(12, 10, 16);
 		camera.lookAt(0, 0, 0);
@@ -494,14 +576,14 @@
 		scene.add(blueLight);
 
 		const packetCount = 30;
-		const trailSegments = 15; 
+		const trailSegments = 15;
 		const packets = [];
 
 		const boxGeo = new THREE.BoxGeometry(0.15, 0.05, 0.4);
-		const boxMat = new THREE.MeshStandardMaterial({ 
-			color: 0x00f2ff, 
-			emissive: 0x00f2ff, 
-			emissiveIntensity: 0.8 
+		const boxMat = new THREE.MeshStandardMaterial({
+			color: 0x00f2ff,
+			emissive: 0x00f2ff,
+			emissiveIntensity: 0.8
 		});
 
 		function createTrailMesh() {
@@ -521,10 +603,10 @@
 			for (let i = 0; i < count; i++) {
 				// PlaneGeometry vertices are ordered in pairs along the height
 				const row = Math.floor(i / 2);
-				vAlphas[i] = 1.0 - (row / trailSegments); 
+				vAlphas[i] = 1.0 - (row / trailSegments);
 			}
 			geometry.setAttribute('vAlpha', new THREE.BufferAttribute(vAlphas, 1));
-			
+
 			material.onBeforeCompile = (shader) => {
 				shader.vertexShader = `
 					attribute float vAlpha;
@@ -534,8 +616,8 @@
 				shader.fragmentShader = `
 					varying float vAlphaOut;
 					${shader.fragmentShader}
-				`.replace(`gl_FragColor = vec4( outgoingLight, diffuseColor.a );`, 
-						`gl_FragColor = vec4( outgoingLight, diffuseColor.a * vAlphaOut );`);
+				`.replace(`gl_FragColor = vec4( outgoingLight, diffuseColor.a );`,
+					`gl_FragColor = vec4( outgoingLight, diffuseColor.a * vAlphaOut );`);
 			};
 
 			return new THREE.Mesh(geometry, material);
@@ -546,7 +628,7 @@
 			const y = (Math.random() - 0.5) * 8;
 			const z = -15;
 			obj.mesh.position.set(x, y, z);
-			
+
 			// CRITICAL FIX: Ensure every slot in history is a real Vector3
 			for (let i = 0; i < obj.history.length; i++) {
 				obj.history[i].set(x, y, z);
@@ -556,7 +638,7 @@
 		for (let i = 0; i < packetCount; i++) {
 			const mesh = new THREE.Mesh(boxGeo, boxMat);
 			const trail = createTrailMesh();
-			
+
 			// Initialize history with actual Vector3 objects
 			const history = [];
 			for (let j = 0; j < trailSegments + 1; j++) {
@@ -568,7 +650,7 @@
 
 			const p = { mesh, trail, history, speed: 0.12 + Math.random() * 0.08 };
 			resetPacket(p);
-			
+
 			// Pre-randomize positions so they don't all fly in a line
 			p.mesh.position.z = (Math.random() * 25) - 15;
 			packets.push(p);
@@ -611,153 +693,529 @@
 		}
 		animate();
 
-(function() {
-        const canvas = document.getElementById('threejs-canvas-2');
-        if (!canvas) return; 
-        const container = canvas.parentElement;
+		(function () {
+			const canvas = document.getElementById('threejs-canvas-2');
+			if (!canvas) return;
+			const container = canvas.parentElement;
 
-        const scene = new THREE.Scene();
-        // Matching the first canvas's transparent/alpha setup
-        const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-        
-        // Exact color matching from your previous snippet
-        const COLOR_SIGNAL = 0xffaa00; 
-        const COLOR_TRACE = 0x443311;
+			const scene = new THREE.Scene();
+			// Matching the first canvas's transparent/alpha setup
+			const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
 
-        const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
-        camera.position.set(20, 20, 20); 
-        camera.lookAt(0, 0, 0);
+			// Exact color matching from your previous snippet
+			const COLOR_SIGNAL = 0xffaa00;
+			const COLOR_TRACE = 0x443311;
 
-        // No lights needed for MeshBasicMaterial, but added a faint one just in case 
-        // you switch materials later.
-        scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+			const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
+			camera.position.set(10, 20, 20);
+			camera.lookAt(0, 0, 0);
 
-        const wireCount = 15;
-        const signals = [];
+			// No lights needed for MeshBasicMaterial, but added a faint one just in case 
+			// you switch materials later.
+			scene.add(new THREE.AmbientLight(0xffffff, 0.5));
 
-        function generatePCBPath() {
-            const points = [];
-            let current = new THREE.Vector3(-20, (Math.random() - 0.5) * 15, (Math.random() - 0.5) * 10);
-            points.push(current.clone());
+			const wireCount = 15;
+			const signals = [];
 
-            const segments = 8;
-            for (let i = 0; i < segments; i++) {
-                current.x += 4 + Math.random() * 4;
-                if (Math.random() > 0.3) {
-                    const axis = Math.random() > 0.5 ? 'y' : 'z';
-                    const dir = Math.random() > 0.5 ? 1 : -1;
-                    const boost = 3;
-                    points.push(current.clone()); 
-                    current.x += boost; 
-                    current[axis] += boost * dir; 
-                }
-                points.push(current.clone());
-            }
-            return new THREE.CatmullRomCurve3(points, false, 'catmullrom', 0.05);
-        }
+			function generatePCBPath() {
+				const points = [];
+				let current = new THREE.Vector3(-20, (Math.random() - 0.5) * 15, (Math.random() - 0.5) * 10);
+				points.push(current.clone());
 
-        function createSignal() {
-            const path = generatePCBPath();
-            
-            // 1. The Trace (Permanent faint wire)
-            const wireGeo = new THREE.BufferGeometry().setFromPoints(path.getPoints(100));
-            const wireMat = new THREE.LineBasicMaterial({ color: COLOR_TRACE, transparent: true, opacity: 0.2 });
-            scene.add(new THREE.Line(wireGeo, wireMat));
+				const segments = 8;
+				for (let i = 0; i < segments; i++) {
+					current.x += 4 + Math.random() * 4;
+					if (Math.random() > 0.3) {
+						const axis = Math.random() > 0.5 ? 'y' : 'z';
+						const dir = Math.random() > 0.5 ? 1 : -1;
+						const boost = 3;
+						points.push(current.clone());
+						current.x += boost;
+						current[axis] += boost * dir;
+					}
+					points.push(current.clone());
+				}
+				return new THREE.CatmullRomCurve3(points, false, 'catmullrom', 0.05);
+			}
 
-            // 2. The Signal Head - CHANGED TO SPHERE + BASIC MATERIAL
-            const headGeo = new THREE.SphereGeometry(0.3, 16, 16);
-            const headMat = new THREE.MeshBasicMaterial({ color: COLOR_SIGNAL });
-            const head = new THREE.Mesh(headGeo, headMat);
+			function createSignal() {
+				const path = generatePCBPath();
 
-            // 3. The Ribbon Trail
-            const trailLen = 25; 
-            const trailGeo = new THREE.PlaneGeometry(0.3, 1, 1, trailLen);
-            const trailMat = new THREE.MeshBasicMaterial({
-                color: COLOR_SIGNAL,
-                transparent: true,
-                opacity: 0.8,
-                blending: THREE.AdditiveBlending,
-                side: THREE.DoubleSide
-            });
+				// 1. The Trace (Permanent faint wire)
+				const wireGeo = new THREE.BufferGeometry().setFromPoints(path.getPoints(100));
+				const wireMat = new THREE.LineBasicMaterial({ color: COLOR_TRACE, transparent: true, opacity: 0.2 });
+				scene.add(new THREE.Line(wireGeo, wireMat));
 
-            // Alpha fade attribute
-            const alphas = new Float32Array(trailGeo.attributes.position.count);
-            for (let i = 0; i < alphas.length; i++) {
-                alphas[i] = 1.0 - (Math.floor(i / 2) / trailLen);
-            }
-            trailGeo.setAttribute('vAlpha', new THREE.BufferAttribute(alphas, 1));
-            
-            trailMat.onBeforeCompile = (shader) => {
-                shader.vertexShader = `attribute float vAlpha; varying float vA; ${shader.vertexShader}`.replace(`void main() {`, `void main() { vA = vAlpha;`);
-                shader.fragmentShader = `varying float vA; ${shader.fragmentShader}`.replace(`vec4 diffuseColor = vec4( diffuse, opacity );`, `vec4 diffuseColor = vec4( diffuse, opacity * vA );`);
-            };
+				// 2. The Signal Head - CHANGED TO SPHERE + BASIC MATERIAL
+				const headGeo = new THREE.SphereGeometry(0.3, 16, 16);
+				const headMat = new THREE.MeshBasicMaterial({ color: COLOR_SIGNAL });
+				const head = new THREE.Mesh(headGeo, headMat);
 
-            const trail = new THREE.Mesh(trailGeo, trailMat);
-            scene.add(head, trail);
+				// 3. The Ribbon Trail
+				const trailLen = 25;
+				const trailGeo = new THREE.PlaneGeometry(0.3, 1, 1, trailLen);
+				const trailMat = new THREE.MeshBasicMaterial({
+					color: COLOR_SIGNAL,
+					transparent: true,
+					opacity: 0.8,
+					blending: THREE.AdditiveBlending,
+					side: THREE.DoubleSide
+				});
 
-            const history = Array.from({ length: trailLen + 1 }, () => new THREE.Vector3(-30, 0, 0));
+				// Alpha fade attribute
+				const alphas = new Float32Array(trailGeo.attributes.position.count);
+				for (let i = 0; i < alphas.length; i++) {
+					alphas[i] = 1.0 - (Math.floor(i / 2) / trailLen);
+				}
+				trailGeo.setAttribute('vAlpha', new THREE.BufferAttribute(alphas, 1));
 
-            return {
-                head, trail, path,
-                progress: Math.random() * -0.5, 
-                speed: 0.0015 + Math.random() * 0.002,
-                history
-            };
-        }
+				trailMat.onBeforeCompile = (shader) => {
+					shader.vertexShader = `attribute float vAlpha; varying float vA; ${shader.vertexShader}`.replace(`void main() {`, `void main() { vA = vAlpha;`);
+					shader.fragmentShader = `varying float vA; ${shader.fragmentShader}`.replace(`vec4 diffuseColor = vec4( diffuse, opacity );`, `vec4 diffuseColor = vec4( diffuse, opacity * vA );`);
+				};
 
-        for (let i = 0; i < wireCount; i++) signals.push(createSignal());
+				const trail = new THREE.Mesh(trailGeo, trailMat);
+				scene.add(head, trail);
 
-        const setSize = () => {
-            renderer.setSize(container.clientWidth, container.clientHeight, false);
-            camera.aspect = container.clientWidth / container.clientHeight;
-            camera.updateProjectionMatrix();
-        };
-        window.addEventListener('resize', setSize);
-        setSize();
+				const history = Array.from({ length: trailLen + 1 }, () => new THREE.Vector3(-30, 0, 0));
 
-        function animate() {
-            requestAnimationFrame(animate);
+				return {
+					head, trail, path,
+					progress: Math.random() * -0.5,
+					speed: 0.0015 + Math.random() * 0.002,
+					history
+				};
+			}
 
-            signals.forEach(s => {
-                s.progress += s.speed;
-                if (s.progress > 1) {
-                    s.progress = 0;
-                    const startPos = s.path.getPointAt(0);
-                    s.history.forEach(h => h.copy(startPos));
-                }
+			for (let i = 0; i < wireCount; i++) signals.push(createSignal());
 
-                if (s.progress >= 0) {
-                    const pos = s.path.getPointAt(s.progress);
-                    s.head.position.copy(pos);
+			const setSize = () => {
+				renderer.setSize(container.clientWidth, container.clientHeight, false);
+				camera.aspect = container.clientWidth / container.clientHeight;
+				camera.updateProjectionMatrix();
+			};
+			window.addEventListener('resize', setSize);
+			setSize();
 
-                    // Shift history
-                    for (let i = s.history.length - 1; i > 0; i--) {
-                        s.history[i].copy(s.history[i - 1]);
-                    }
-                    s.history[0].copy(pos);
+			function animate() {
+				requestAnimationFrame(animate);
 
-                    // Update Trail Ribbon
-                    const posAttr = s.trail.geometry.attributes.position;
-                    for (let i = 0; i < s.history.length; i++) {
-                        const p = s.history[i];
-                        // Flat-ish ribbon orientation
-                        posAttr.setXYZ(i * 2, p.x, p.y - 0.15, p.z);
-                        posAttr.setXYZ(i * 2 + 1, p.x, p.y + 0.15, p.z);
-                    }
-                    posAttr.needsUpdate = true;
-                    s.head.visible = true;
-                    s.trail.visible = true;
-                } else {
-                    s.head.visible = false;
-                    s.trail.visible = false;
-                }
-            });
+				signals.forEach(s => {
+					s.progress += s.speed;
+					if (s.progress > 1) {
+						s.progress = 0;
+						const startPos = s.path.getPointAt(0);
+						s.history.forEach(h => h.copy(startPos));
+					}
 
-            renderer.render(scene, camera);
-        }
-        animate();
-    })();
-</script>
+					if (s.progress >= 0) {
+						const pos = s.path.getPointAt(s.progress);
+						s.head.position.copy(pos);
+
+						// Shift history
+						for (let i = s.history.length - 1; i > 0; i--) {
+							s.history[i].copy(s.history[i - 1]);
+						}
+						s.history[0].copy(pos);
+
+						// Update Trail Ribbon
+						const posAttr = s.trail.geometry.attributes.position;
+						for (let i = 0; i < s.history.length; i++) {
+							const p = s.history[i];
+							// Flat-ish ribbon orientation
+							posAttr.setXYZ(i * 2, p.x, p.y - 0.15, p.z);
+							posAttr.setXYZ(i * 2 + 1, p.x, p.y + 0.15, p.z);
+						}
+						posAttr.needsUpdate = true;
+						s.head.visible = true;
+						s.trail.visible = true;
+					} else {
+						s.head.visible = false;
+						s.trail.visible = false;
+					}
+				});
+
+				renderer.render(scene, camera);
+			}
+			animate();
+		})();
+
+		(function () {
+			const canvas = document.getElementById('threejs-canvas-3');
+			if (!canvas) return;
+			const container = canvas.parentElement;
+
+			canvas.style.transform = "translateX(25%)";
+
+			const scene = new THREE.Scene();
+			const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+			const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
+			camera.position.set(7, 7, 7);
+			camera.lookAt(0, 0, 0);
+
+			const size = 10;
+			const res = 60;
+			const geometry = new THREE.PlaneGeometry(size, size, res, res);
+			geometry.rotateX(-Math.PI / 2);
+
+			const modelGroup = new THREE.Group();
+			modelGroup.scale.set(0.5, 0.5, 0.5);
+			scene.add(modelGroup);
+
+			geometry.setAttribute('color', new THREE.BufferAttribute(new Float32Array(geometry.attributes.position.count * 3), 3));
+
+			const terrainMat = new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.DoubleSide });
+			const terrain = new THREE.Mesh(geometry, terrainMat);
+			modelGroup.add(terrain);
+
+			const wireOverlay = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({
+				color: 0x000000, wireframe: true, transparent: true, opacity: 0.05
+			}));
+			modelGroup.add(wireOverlay);
+
+			const ball = new THREE.Mesh(
+				new THREE.SphereGeometry(0.25, 20, 20),
+				new THREE.MeshBasicMaterial({ color: 0xffffff })
+			);
+			ball.visible = false;
+			modelGroup.add(ball);
+
+			let currentX = 0, currentZ = 0;
+			let learningRate = 0.2;
+			let targetHeights = new Float32Array(geometry.attributes.position.count);
+			let params = { a: 1, b: 1, c: 1 };
+
+			let isTransitioning = true;
+			let isWaitingForReset = false;
+
+			function updateColors() {
+				const pos = geometry.attributes.position;
+				const cols = geometry.attributes.color;
+				for (let i = 0; i < pos.count; i++) {
+					const y = pos.getY(i);
+					let t = (y + params.c) / (params.c * 2);
+					t = Math.max(0, Math.min(1, t));
+					const r = t > 0.75 ? 1 : t > 0.5 ? (t - 0.5) * 4 : 0;
+					const g = t > 0.75 ? (1 - t) * 4 : t > 0.25 ? 1 : t * 4;
+					const b = t > 0.5 ? 0 : t > 0.25 ? (0.5 - t) * 4 : 1;
+					cols.setXYZ(i, r, g, b);
+				}
+				cols.needsUpdate = true;
+			}
+
+			function generateNewSurface() {
+				isTransitioning = true;
+				isWaitingForReset = false;
+				ball.visible = false;
+				ball.scale.set(0.01, 0.01, 0.01);
+
+				params = {
+					a: (Math.random() > 0.5 ? 1 : -1) * (Math.random() * 0.3 + 0.3),
+					b: (Math.random() > 0.5 ? 1 : -1) * (Math.random() * 0.3 + 0.3),
+					c: Math.random() * 0.8 + 1.5
+				};
+
+				const pos = geometry.attributes.position;
+				for (let i = 0; i < pos.count; i++) {
+					const x = pos.getX(i);
+					const z = pos.getZ(i);
+					targetHeights[i] = Math.sin(x * params.a) * Math.cos(z * params.b) * params.c;
+				}
+			}
+
+			function getY(x, z) {
+				return Math.sin(x * params.a) * Math.cos(z * params.b) * params.c;
+			}
+
+			generateNewSurface();
+
+			const setSize = () => {
+				renderer.setSize(container.clientWidth, container.clientHeight, false);
+				camera.aspect = container.clientWidth / container.clientHeight;
+				camera.updateProjectionMatrix();
+			};
+			window.addEventListener('resize', setSize);
+			setSize();
+
+			function animate() {
+				requestAnimationFrame(animate);
+
+				const pos = geometry.attributes.position;
+				let diffSum = 0;
+
+				for (let i = 0; i < pos.count; i++) {
+					const currentY = pos.getY(i);
+					const delta = (targetHeights[i] - currentY) * 0.08;
+					pos.setY(i, currentY + delta);
+					diffSum += Math.abs(delta);
+				}
+				pos.needsUpdate = true;
+				updateColors();
+
+				if (isTransitioning && diffSum < 0.05) {
+					isTransitioning = false;
+					currentX = (Math.random() - 0.5) * 7;
+					currentZ = (Math.random() - 0.5) * 7;
+					ball.visible = true;
+				}
+
+				if (!isTransitioning && !isWaitingForReset && ball.visible) {
+					// Instant pop-in
+					if (ball.scale.x < 1) ball.scale.addScalar(0.2);
+
+					const eps = 0.1;
+					const gradX = (getY(currentX + eps, currentZ) - getY(currentX - eps, currentZ)) / (2 * eps);
+					const gradZ = (getY(currentX, currentZ + eps) - getY(currentX, currentZ - eps)) / (2 * eps);
+
+					currentX -= gradX * learningRate;
+					currentZ -= gradZ * learningRate;
+
+					currentX = Math.max(-4.8, Math.min(4.8, currentX));
+					currentZ = Math.max(-4.8, Math.min(4.8, currentZ));
+
+					const isStopped = Math.abs(gradX) < 0.005 && Math.abs(gradZ) < 0.005;
+					const isOutOfBounds = Math.abs(currentX) >= 4.8 || Math.abs(currentZ) >= 4.8;
+
+					if (isStopped || isOutOfBounds) {
+						isWaitingForReset = true;
+						// Faster reset cycle
+						setTimeout(generateNewSurface, 600);
+					}
+				}
+
+				ball.position.set(currentX, getY(currentX, currentZ) + 0.35, currentZ);
+				modelGroup.rotation.y += 0.003;
+
+				renderer.render(scene, camera);
+			}
+			animate();
+		})();
+	</script>
+	<div id="exp-modal-overlay" onclick="closeExpModal()">
+		<div class="exp-modal-window" onclick="event.stopPropagation()">
+			<div class="exp-modal-header">
+				<div class="window-dots">
+					<span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+				</div>
+				<button class="exp-modal-close" onclick="closeExpModal()">&times;</button>
+			</div>
+			<div id="exp-modal-content">
+			</div>
+		</div>
+	</div>
+
+	<style>
+		#exp-modal-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.85);
+			backdrop-filter: blur(5px);
+			display: none;
+			align-items: center;
+			justify-content: center;
+			z-index: 100000;
+			font-family: inherit;
+		}
+
+		.exp-modal-window {
+			background: #fff;
+			color: #333;
+			width: 90%;
+			max-width: 1000px;
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+			animation: modalFadeIn 0.2s ease-out;
+		}
+
+		@keyframes modalFadeIn {
+			from {
+				opacity: 0;
+				transform: scale(0.95);
+			}
+
+			to {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+
+		.exp-modal-header {
+			background: #f4f4f4;
+			padding: 12px 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid #eee;
+		}
+
+		.window-dots {
+			display: flex;
+			gap: 6px;
+		}
+
+		.dot {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+
+		.dot.r {
+			background: #ff5f56;
+		}
+
+		.dot.y {
+			background: #ffbd2e;
+		}
+
+		.dot.g {
+			background: #27c93f;
+		}
+
+		.exp-modal-close {
+			background: none;
+			border: none;
+			font-size: 24px;
+			cursor: pointer;
+			color: #999;
+		}
+
+		.exp-modal-close:hover {
+			color: #333;
+		}
+
+		#exp-modal-content {
+			padding: 40px;
+		}
+
+		.m-title {
+			font-size: 2rem;
+			margin: 0;
+			color: #111;
+			line-height: 1.2;
+		}
+
+		.m-role {
+			color: #2a7fba;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 0.85rem;
+			letter-spacing: 1px;
+			margin-top: 5px;
+			display: block;
+		}
+
+		.m-meta {
+			margin-top: 15px;
+			font-size: 0.9rem;
+			color: #777;
+			border-bottom: 1px solid #eee;
+			padding-bottom: 15px;
+		}
+
+		.m-body {
+			margin-top: 12px;
+			line-height: 1.7;
+			color: #444;
+		}
+	</style>
+
+	<script>
+		const internshipData = {
+			'internship-4': {
+				title: "ASML",
+				role: "Data Analyst Intern",
+				loc: "Veldhoven, NL",
+				dur: "Jun 2025 – Jan 2026",
+				comp: "ASML is a global leader in semiconductor lithography systems.",
+				desc: `
+                <ul>
+                    <li>Overhauled a defect analysis dashboard for reticle monitoring in semiconductor production.</li>
+                    <li>Optimized data architecture and queries (SQL & Python) on Spotfire and Databricks, reducing load times.</li>
+                    <li>Designed new KPIs and interactive features to streamline decision-making using web components.</li>
+                    <li>Collaborated with engineers to validate data for mission-critical dashboards.</li>
+                </ul>`
+			},
+			'internship-3': {
+				title: "Austrian Institute of Technology (AIT)",
+				role: "Machine Learning Research Intern",
+				loc: "Vienna, AT",
+				dur: "Apr – Jun 2025",
+				comp: "Center for Digital Safety & Security (DSS).",
+				desc: `
+                <ul>
+                    <li>Implemented federated learning research pipelines for object detection using Ultralytics YOLO and Python.</li>
+                    <li>Deployed on NVIDIA Jetson, conducting performance benchmarks and inference optimization.</li>
+                    <li>Evaluated model performance across various training scenarios and convergence benchmarks.</li>
+                </ul>`
+			},
+			'internship-2': {
+				title: "National Institute for Nuclear Physics (INFN)",
+				role: "Data Analyst Research Intern",
+				loc: "Frascati, IT",
+				dur: "Jul – Aug 2023",
+				comp: "Laboratori Nazionali di Frascati (LNF) - specializing in particle physics research.",
+				desc: `
+                <ul>
+                    <li>Performed energy response analysis for the calibration of silicon drift detectors (SDD) in nuclear physics (SIDDHARTA-2).</li>
+                    <li>Used C++ and CERN's ROOT framework for statistical analysis of large experimental datasets.</li>
+                </ul>`
+			},
+			'internship-1': {
+				title: "Austrian Academy of Sciences (ÖAW)",
+				role: "Electronics Research Intern",
+				loc: "Vienna, AT",
+				dur: "Apr – Jun 2022",
+				comp: "Stefan Meyer Institute for Subatomic Physics (SMI), now Marietta Blau Institute (MBI).",
+				desc: `
+                <ul>
+                    <li>Assisted in the assembly and hardware testing of silicon photomultiplier pre-amplifier boards for particle physics (ASACUSA, CERN-AD).</li>
+                    <li>Debugged Arduino and PyQt code; installed pre-amplifier boards with FPGA modules.</li>
+                </ul>`
+			},
+			'more-info_': {
+				title: "Additional Experience",
+				role: "Engineer & Researcher",
+				loc: "International",
+				dur: "Ongoing",
+				comp: "Research & Development",
+				desc: "For a full breakdown of my academic projects and technical publications, please refer to the 'Projects' section or download my full CV above."
+			}
+		};
+
+		function openModal(id) {
+			const data = internshipData[id];
+			if (!data) return;
+
+			// Inside your openModal function, update this part:
+			document.getElementById('exp-modal-content').innerHTML = `
+				<h2 class="m-title">${data.title}</h2>
+				<span class="m-role">${data.role}</span>
+				<div class="m-meta">
+					<strong>${data.loc}</strong> &nbsp; | &nbsp; ${data.dur}
+				</div>
+				
+				<p style="font-size: 0.9rem; margin-top: 20px; margin-bottom: 0;">
+					<strong>About:</strong> ${data.comp}
+				</p>
+				
+				<div class="m-body">
+					${data.desc}
+				</div>
+			`;
+
+			document.getElementById('exp-modal-overlay').style.display = 'flex';
+			document.body.style.overflow = 'hidden';
+		}
+
+		function closeExpModal() {
+			document.getElementById('exp-modal-overlay').style.display = 'none';
+			document.body.style.overflow = 'auto';
+		}
+	</script>
 </body>
 
 </html>

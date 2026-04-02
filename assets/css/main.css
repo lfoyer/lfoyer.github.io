@@ -9474,3 +9474,115 @@ section.timeline-wrapper {
     margin-top: 5px !important;
     font-weight: 300 !important;
 }
+
+/* Dark button by default, Blue on hover */
+.btn-cv {
+    background-color: #212121 !important; /* Dark background */
+    color: #ffffff !important;           /* White text/icon */
+    border-color: #212121 !important;    /* Match border to background */
+    transition: all 0.3s ease !important; /* Smooth color fade */
+	margin-left: 10px;
+}
+
+.btn-cv:hover {
+    background-color: #2a7fba !important; /* Your "Scientific Blue" */
+    border-color: #2a7fba !important;     /* Match border to blue */
+    color: #ffffff !important;           /* Keep text white */
+}
+
+.btn-cv i {
+    margin-right: 8px; /* Standard spacing for the PDF icon */
+}
+
+#education {
+    padding: 3rem 0;
+}
+
+.edu-vertical-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem; /* Minimal gap for a "brutalist" stacked look */
+}
+
+.edu-bw-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 !important; /* Forces sharp corners */
+    transition: background-color 0.2s ease;
+}
+
+/* Grayscale Palette */
+.edu-gray-1 { background-color: #fe5858; } /* Near black */
+.edu-gray-2 { background-color: #57bb43; } /* Dark Gray */
+.edu-gray-3 { background-color: #595cf4; } /* Medium Gray */
+
+/* Hover: Subtle lightening of the gray */
+.edu-gray-1:hover { background-color: #262626; }
+.edu-gray-2:hover { background-color: #262626; }
+.edu-gray-3:hover { background-color: #262626; }
+
+.edu-card-left {
+    flex: 1.5; /* Gives the long titles more horizontal room */
+    padding-right: 1rem;
+}
+
+.edu-card-left h3 {
+    font-size: 0.95rem; /* Slightly smaller to prevent overcrowding */
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.edu-bw-card .location {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.2rem;
+}
+
+.edu-card-right {
+    flex: 1.2;
+    text-align: right;
+    min-width: 180px; /* Ensures degree text has room to breathe */
+}
+
+.edu-bw-card .degree {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.edu-bw-card .duration {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+/* Mobile Fix */
+@media screen and (max-width: 980px) {
+    .edu-bw-card {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+    .edu-card-right {
+        text-align: left;
+        margin-top: 1rem;
+        min-width: 100%;
+    }
+}
+
+/* Specifically target the Education section header paragraph */
+#education .index > section > header p.major {
+    font-style: normal !important;
+    font-family: inherit; /* Ensures it matches the H2 font if needed */
+}
