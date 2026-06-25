@@ -1,1231 +1,423 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
 
-<head>
-	<title>Laurent Foyer</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<script type="importmap">
-		{
-			"imports": {
-			"three": "https://unpkg.com/three@latest/build/three.module.js"
-			}
-		}
-	</script>
-	<script>
-		//alert("This website is still under construction. Information presented may be incomplete or subject to change.")
-	</script>
-</head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MDD1LH2STT"></script>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Hi! - Laurent Foyer</title>
+
+
+
+<meta name="description" content="Laurent Foyer’s academic portfolio">
+
+
+
+
+
+
+
+  <link rel="canonical" href="http://localhost:4000/">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Laurent Foyer",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Laurent Foyer"> 
+<meta property="og:title" content="Hi!">
+
+
+
+  <meta property="og:url" content="http://localhost:4000/">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Laurent Foyer Feed">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MDD1LH2STT');
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-<body class="is-preload">
-
-	<!-- Wrapper -->
-	<div id="wrapper" class="divided">
-
-		<!-- One -->
-		<section
-			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-			<div class="content">
-				<h1>Laurent Foyer</h1>
-				<p class="major">Graduate Engineer in Computer Science</p>
-
-				<ul class="icons">
-					<li><a href="https://github.com/lfoyer" class="icon brands fa-github"><span
-								class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/laurent-foyer/" class="icon brands fa-linkedin-in"><span
-								class="label">LinkedIn</span></a></li>
-					<li><a href="mailto:laurent.me.foyer@gmail.com" class="icon fa-envelope"><span
-								class="label">Email</span></a></li>
-				</ul>
-
-				<ul class="actions stacked">
-					<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<img src="images/banner.jpg" alt="" />
-			</div>
-		</section>
-
-		<!-- Two -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
-			id="first">
-			<div class="content">
-				<h2>Computing, electronics, and more</h2>
-				<p>With a background in both computer science and electrical engineering, I aim to apply my skills in
-					meaningful fields at the intersection of software, hardware, and physics.</p>
-
-				<ul class="actions stacked" style="margin-top: 0rem !important;">
-					<li>
-						<a href="#data" class="button big wide smooth-scroll-middle">Next</a>
-						<a href="CV_LFoyer_en.pdf" target="_blank" class="button btn-cv">
-							<i class="fas fa-file-pdf"></i> View CV
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="image">
-				<img src="images/spotlight01.jpg" alt="" />
-			</div>
-		</section>
-
-		<section class="spotlight style5 orient-left content-align-left image-position-center onscroll-image-fade-in"
-			id="data">
-			<div class="content">
-				<h2>Data</h2>
-				<p>I build the pipelines that process raw information into usable datasets. My focus is on applying
-					statistical models and mathematical optimization to solve complex problems across
-					<strong>distributed
-						systems</strong>.
-				</p>
-				<ul class="actions stacked">
-					<li><a href="#electronics" class="button big wide smooth-scroll-middle">Next</a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<canvas id="threejs-canvas-1"></canvas>
-			</div>
-		</section>
-
-		<section class="spotlight style5 orient-right content-align-left image-position-center onscroll-image-fade-in"
-			id="electronics">
-			<div class="content">
-				<h2>Electronics</h2>
-				<p>Bridging the gap between software and the physical world. I specialize in <strong>embedded systems
-						and sensor
-						integration</strong>, using lab instrumentation to interface digital logic with real-world
-					hardware.</p>
-				<ul class="actions stacked">
-					<li><a href="#ml" class="button big wide smooth-scroll-middle">Next</a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<canvas id="threejs-canvas-2"></canvas>
-			</div>
-		</section>
-
-		<section class="spotlight style5 orient-left content-align-left image-position-center onscroll-image-fade-in"
-			id="ml">
-			<div class="content">
-				<h2>Intelligence</h2>
-				<p>
-					I design and train <strong>machine learning</strong> models and <strong>neural networks</strong> for
-					real-world performance. From deep
-					learning to algorithmic optimization, I build systems that learn from data and scale efficiently.
-				</p>
-				<ul class="actions stacked">
-					<li><a href="#education" class="button big wide smooth-scroll-middle">Next</a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<canvas id="threejs-canvas-3"></canvas>
-			</div>
-		</section>
-
-		<section class="wrapper style1 align-left" id="education">
-			<div class="inner">
-				<div class="index align-left">
-					<section>
-						<header>
-							<h2>Education</h2>
-							<p class="major">Academic background.</p>
-							<ul class="actions stacked">
-								<li><a href="#experience" class="button big wide smooth-scroll-middle">Next</a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<div class="edu-vertical-stack">
-
-								<div class="edu-bw-card edu-gray-1">
-									<div class="edu-card-left">
-										<span class="location">Rouen, FR</span>
-										<h3>National Institute of Applied Sciences of Rouen</h3>
-									</div>
-									<div class="edu-card-right">
-										<p class="degree">MSc in Computer Science</p>
-										<p class="duration">2022 – 2026</p>
-									</div>
-								</div>
-
-								<div class="edu-bw-card edu-gray-2">
-									<div class="edu-card-left">
-										<span class="location">Rouen, FR</span>
-										<h3>Institute of Technology of Rouen</h3>
-									</div>
-									<div class="edu-card-right">
-										<p class="degree">Associate Degree in Electrical Engineering</p>
-										<p class="duration">2020 – 2022</p>
-									</div>
-								</div>
-
-								<div class="edu-bw-card edu-gray-3">
-									<div class="edu-card-left">
-										<span class="location">Buenos Aires, AR</span>
-										<h3>Institute of Technology of Buenos Aires</h3>
-									</div>
-									<div class="edu-card-right">
-										<p class="degree">Computer Science (Exchange)</p>
-										<p class="duration">2024</p>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-		</section>
-
-		<section
-			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
-			id="experience">
-			<div class="content">
-				<h1>Experience</h1>
-				<p class="major">A timeline of my professional journey.</p>
-				<ul class="actions stacked">
-					<li><a href="#skills" class="button big wide smooth-scroll">Next</a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<div id="custom-exp-grid">
-					<div class="exp-card span-big shade-1" onclick="openModal('internship-4')">
-						<div class="exp-content">
-							<p class="location">Veldhoven, NL</p>
-							<h3>ASML</h3>
-							<p class="role">Data Analyst Intern</p>
-							<p class="duration">6 Months</p>
-						</div>
-					</div>
-
-					<div class="exp-card shade-2" onclick="openModal('internship-3')">
-						<div class="exp-content">
-							<p class="location">Vienna, AT</p>
-							<h3>Austrian Institute of Technology</h3>
-							<p class="role">Machine Learning Intern</p>
-							<p class="duration">3 Months</p>
-						</div>
-					</div>
-
-					<div class="exp-card shade-3" onclick="openModal('internship-2')">
-						<div class="exp-content">
-							<p class="location">Frascati, IT</p>
-							<h3>National Institute for Nuclear Physics</h3>
-							<p class="role">Data Analyst Intern</p>
-							<p class="duration">1 Month</p>
-						</div>
-					</div>
-
-					<div class="exp-card shade-4" onclick="openModal('internship-1')">
-						<div class="exp-content">
-							<p class="location">Vienna, AT</p>
-							<h3>Austrian Academy of Sciences</h3>
-							<p class="role">Electronics Intern</p>
-							<p class="duration">3 Months</p>
-						</div>
-					</div>
-
-					<div class="exp-card card-more" onclick="openModal('more-info')">
-						<div class="exp-content centered">
-							<h3></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Gallery -->
-		<div class="gallery style2 medium lightbox onscroll-fade-in">
-			<article>
-				<a href="images/gallery/fulls/06.jpg" class="image">
-					<img src="images/gallery/thumbs/06.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>ASML Cleanroom</h3>
-					<p>Inside one of ASML's cleanroom facilities in Veldhoven <br> November 2025</p>
-					</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/01.jpg" class="image">
-					<img src="images/gallery/thumbs/01.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>LNF Group photo 1</h3>
-					<p>Attendees of the Mini workshop on kaonic atoms <br> Laboratori Nazionali di Frascati <br> July
-						18, 2023</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/02.jpg" class="image">
-					<img src="images/gallery/thumbs/02.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>LNF Group photo 2</h3>
-					<p>Attendees of the Mini workshop on kaonic atoms <br> Laboratori Nazionali di Frascati <br> July
-						18, 2023</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/03.jpg" class="image">
-					<img src="images/gallery/thumbs/03.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>SMI</h3>
-					<p>Team photo working on the Hbar hodoscope <br> Stefan Meyer Instite for Subatomic Physics <br>
-						June 13, 2022</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/04.jpg" class="image">
-					<img src="images/gallery/thumbs/04.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>DAΦNE 1</h3>
-					<p>SIDDHARTA-2 apparatus inside the DAΦNE collider <br> Laboratori Nazionali di Frascati <br> July
-						24, 2023</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/05.jpg" class="image">
-					<img src="images/gallery/thumbs/05.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>DAΦNE 2</h3>
-					<p>Laboratori Nazionali di Frascati <br> July 24, 2023</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/07.jpg" class="image">
-					<img src="images/gallery/thumbs/07.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>Ipsum Lorem</h3>
-					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/08.jpg" class="image">
-					<img src="images/gallery/thumbs/08.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>Magna Risus</h3>
-					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/09.jpg" class="image">
-					<img src="images/gallery/thumbs/09.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>Tempus Dolor</h3>
-					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/10.jpg" class="image">
-					<img src="images/gallery/thumbs/10.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>Sed Etiam</h3>
-					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/11.jpg" class="image">
-					<img src="images/gallery/thumbs/11.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>Magna Lorem</h3>
-					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<a href="images/gallery/fulls/12.jpg" class="image">
-					<img src="images/gallery/thumbs/12.jpg" alt="" />
-				</a>
-				<div class="caption">
-					<h3>Ipsum Dolor</h3>
-					<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					<ul class="actions fixed">
-						<li><span class="button small">Details</span></li>
-					</ul>
-				</div>
-			</article>
-		</div>
-
-		</section>
-
-		<!-- Six -->
-		<section class="wrapper style1 align-center" id="skills">
-			<div class="inner">
-				<h2>Technical Skills</h2>
-				<p>My background spans the entire technical stack: from high-level software and machine learning to
-					electronic systems and hardware integration.</p>
-				<div class="items style1 medium onscroll-fade-in">
-					<section>
-						<span class="icon solid style2 major fa-code"></span>
-						<h3>Programming</h3>
-						<p>Solid foundation in object-oriented logic and algorithmic problem-solving.
-						</p>
-						<a class="button button-small">Python</a>
-						<a class="button button-small">C</a>
-						<a class="button button-small">C++</a>
-						<a class="button button-small">Java</a>
-						<a class="button button-small">Algorithms</a>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-chart-bar"></span>
-						<h3>Data Science</h3>
-						<p>Cleaning, transforming, and analyzing complex datasets to extract actionable insights.</p>
-						<a class="button button-small">pandas</a>
-						<a class="button button-small">NumPy</a>
-						<a class="button button-small">SQL</a>
-						<a class="button button-small">Matplotlib</a>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-brain"></span>
-						<h3>Artificial Intelligence</h3>
-						<p>Implementation of machine learning models and classical AI search strategies.</p>
-						<a class="button button-small">scikit-learn</a>
-						<a class="button button-small">PyTorch</a>
-						<a class="button button-small">Computer Vision</a>
-						<a class="button button-small">Graph Theory</a>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-wave-square"></span>
-						<h3>Electronics & Lab</h3>
-						<p>Theory and practice of circuit design, paired with hands-on laboratory debugging and hardware
-							testing.</p>
-						<div class="skills-btns">
-							<a class="button button-small">Analog</a>
-							<a class="button button-small">Digital</a>
-							<a class="button button-small">Circuit Analysis</a>
-							<a class="button button-small">Oscilloscope</a>
-							<a class="button button-small">Signal Generator</a>
-							<a class="button button-small">Multimeter</a>
-						</div>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-microchip"></span>
-						<h3>Embedded Systems</h3>
-						<p>Deploying software directly onto hardware units for real-world interaction.</p>
-						<a class="button button-small">Arduino</a>
-						<a class="button button-small">Raspberry Pi</a>
-						<a class="button button-small">NVIDIA Jetson</a>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-calculator"></span>
-						<h3>Mathematics</h3>
-						<p>Applied mathematical concepts for engineering, optimization, and signal processing.</p>
-						<a class="button button-small">Statistics</a>
-						<a class="button button-small">Optimization</a>
-						<a class="button button-small">Signal Processing</a>
-					</section>
-					<section>
-						<span class="icon brands style2 major fa-git"></span>
-						<h3>Git & Workflow</h3>
-						<p>Management of codebase versions and collaborative development environments.</p>
-						<a class="button button-small">Git</a>
-						<a class="button button-small">GitHub</a>
-						<a class="button button-small">Linux / Bash</a>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-globe"></span>
-						<h3>Web</h3>
-						<p>Fundamental understanding of front-end structure and styling for static sites.</p>
-						<a class="button button-small">HTML</a>
-						<a class="button button-small">CSS</a>
-						<a class="button button-small">JavaScript</a>
-					</section>
-					<section>
-						<span class="icon solid style2 major fa-language"></span>
-						<h3>Languages</h3>
-						<p>French-American dual citizen with experience in international work environments.</p>
-						<a class="button button-small">English (Native)</a>
-						<a class="button button-small">French (Native)</a>
-						<a class="button button-small">Spanish (Advanced)</a>
-					</section>
-				</div>
-			</div>
-		</section>
-
-		<!-- Seven -->
-		<!--
-		<section class="wrapper style1 align-center">
-			<div class="inner medium">
-				<h2>Get in touch</h2>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" value="" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" value="" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6"></textarea>
-						</div>
-					</div>
-					<ul class="actions special">
-						<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-					</ul>
-				</form>
-
-			</div>
-		</section>
-		-->
-
-		<!-- Footer -->
-		<footer class="wrapper style1 align-center">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="https://github.com/lfoyer" class="icon brands style2 fa-github"><span
-								class="label">Twitter</span></a></li>
-					<li><a href="https://www.linkedin.com/in/laurent-foyer/"
-							class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					<li><a href="mailto:laurent.me.foyer@gmail.com" class="icon style2 fa-envelope"><span
-								class="label">Email</span></a></li>
-				</ul>
-				<p>&copy; Laurent Foyer. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-				<a id="funky-link" href="#"
-					style="display:none;font-size:0.9em;opacity:0.6;text-decoration:underline;cursor:pointer;">make this
-					website funky</a>
-				<audio id="funky-audio" src="assets/music/funk.mp3"></audio>
-			</div>
-		</footer>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script type="importmap">
-		{
-			"imports": {
-				"three": "https://unpkg.com/three@0.160.0/build/three.module.js"
-			}
-		}
-	</script>
-
-	<script type="module">
-		import * as THREE from 'three';
-
-		const canvas = document.getElementById('threejs-canvas-1');
-		const container = canvas.parentElement;
-
-		const scene = new THREE.Scene();
-		const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-
-		const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
-		camera.position.set(12, 10, 16);
-		camera.lookAt(0, 0, 0);
-
-		scene.add(new THREE.AmbientLight(0xffffff, 0.5));
-		const blueLight = new THREE.PointLight(0x00f2ff, 2, 20);
-		blueLight.position.set(0, 5, 5);
-		scene.add(blueLight);
-
-		const packetCount = 30;
-		const trailSegments = 15;
-		const packets = [];
-
-		const boxGeo = new THREE.BoxGeometry(0.15, 0.05, 0.4);
-		const boxMat = new THREE.MeshStandardMaterial({
-			color: 0x00f2ff,
-			emissive: 0x00f2ff,
-			emissiveIntensity: 0.8
-		});
-
-		function createTrailMesh() {
-			// PlaneGeometry: width, height, widthSegments, heightSegments
-			const geometry = new THREE.PlaneGeometry(0.12, 1, 1, trailSegments);
-			const material = new THREE.MeshBasicMaterial({
-				color: 0x00f2ff,
-				transparent: true,
-				opacity: 0.5,
-				side: THREE.DoubleSide,
-				blending: THREE.AdditiveBlending,
-			});
-
-			// Fade out logic via vertex colors
-			const count = geometry.attributes.position.count;
-			const vAlphas = new Float32Array(count);
-			for (let i = 0; i < count; i++) {
-				// PlaneGeometry vertices are ordered in pairs along the height
-				const row = Math.floor(i / 2);
-				vAlphas[i] = 1.0 - (row / trailSegments);
-			}
-			geometry.setAttribute('vAlpha', new THREE.BufferAttribute(vAlphas, 1));
-
-			material.onBeforeCompile = (shader) => {
-				shader.vertexShader = `
-					attribute float vAlpha;
-					varying float vAlphaOut;
-					${shader.vertexShader}
-				`.replace(`void main() {`, `void main() { vAlphaOut = vAlpha;`);
-				shader.fragmentShader = `
-					varying float vAlphaOut;
-					${shader.fragmentShader}
-				`.replace(`gl_FragColor = vec4( outgoingLight, diffuseColor.a );`,
-					`gl_FragColor = vec4( outgoingLight, diffuseColor.a * vAlphaOut );`);
-			};
-
-			return new THREE.Mesh(geometry, material);
-		}
-
-		function resetPacket(obj) {
-			const x = (Math.random() - 0.5) * 12;
-			const y = (Math.random() - 0.5) * 8;
-			const z = -15;
-			obj.mesh.position.set(x, y, z);
-
-			// CRITICAL FIX: Ensure every slot in history is a real Vector3
-			for (let i = 0; i < obj.history.length; i++) {
-				obj.history[i].set(x, y, z);
-			}
-		}
-
-		for (let i = 0; i < packetCount; i++) {
-			const mesh = new THREE.Mesh(boxGeo, boxMat);
-			const trail = createTrailMesh();
-
-			// Initialize history with actual Vector3 objects
-			const history = [];
-			for (let j = 0; j < trailSegments + 1; j++) {
-				history.push(new THREE.Vector3(0, 0, -15));
-			}
-
-			scene.add(mesh);
-			scene.add(trail);
-
-			const p = { mesh, trail, history, speed: 0.12 + Math.random() * 0.08 };
-			resetPacket(p);
-
-			// Pre-randomize positions so they don't all fly in a line
-			p.mesh.position.z = (Math.random() * 25) - 15;
-			packets.push(p);
-		}
-
-		const setSize = () => {
-			renderer.setSize(container.clientWidth, container.clientHeight, false);
-			camera.aspect = container.clientWidth / container.clientHeight;
-			camera.updateProjectionMatrix();
-		};
-		window.addEventListener('resize', setSize);
-		setSize();
-
-		function animate() {
-			requestAnimationFrame(animate);
-
-			packets.forEach(p => {
-				p.mesh.position.z += p.speed;
-
-				// 1. Shift history
-				for (let i = p.history.length - 1; i > 0; i--) {
-					p.history[i].copy(p.history[i - 1]);
-				}
-				p.history[0].copy(p.mesh.position);
-
-				// 2. Map history to Trail Geometry
-				const posAttr = p.trail.geometry.attributes.position;
-				for (let i = 0; i < p.history.length; i++) {
-					const point = p.history[i];
-					// Update the left (-0.06) and right (+0.06) vertices of the ribbon
-					posAttr.setXYZ(i * 2, point.x - 0.06, point.y, point.z);
-					posAttr.setXYZ(i * 2 + 1, point.x + 0.06, point.y, point.z);
-				}
-				posAttr.needsUpdate = true;
-
-				if (p.mesh.position.z > 10) resetPacket(p);
-			});
-
-			renderer.render(scene, camera);
-		}
-		animate();
-
-		(function () {
-			const canvas = document.getElementById('threejs-canvas-2');
-			if (!canvas) return;
-			const container = canvas.parentElement;
-
-			const scene = new THREE.Scene();
-			// Matching the first canvas's transparent/alpha setup
-			const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-
-			// Exact color matching from your previous snippet
-			const COLOR_SIGNAL = 0xffaa00;
-			const COLOR_TRACE = 0x443311;
-
-			const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
-			camera.position.set(10, 20, 20);
-			camera.lookAt(0, 0, 0);
-
-			// No lights needed for MeshBasicMaterial, but added a faint one just in case 
-			// you switch materials later.
-			scene.add(new THREE.AmbientLight(0xffffff, 0.5));
-
-			const wireCount = 15;
-			const signals = [];
-
-			function generatePCBPath() {
-				const points = [];
-				let current = new THREE.Vector3(-20, (Math.random() - 0.5) * 15, (Math.random() - 0.5) * 10);
-				points.push(current.clone());
-
-				const segments = 8;
-				for (let i = 0; i < segments; i++) {
-					current.x += 4 + Math.random() * 4;
-					if (Math.random() > 0.3) {
-						const axis = Math.random() > 0.5 ? 'y' : 'z';
-						const dir = Math.random() > 0.5 ? 1 : -1;
-						const boost = 3;
-						points.push(current.clone());
-						current.x += boost;
-						current[axis] += boost * dir;
-					}
-					points.push(current.clone());
-				}
-				return new THREE.CatmullRomCurve3(points, false, 'catmullrom', 0.05);
-			}
-
-			function createSignal() {
-				const path = generatePCBPath();
-
-				// 1. The Trace (Permanent faint wire)
-				const wireGeo = new THREE.BufferGeometry().setFromPoints(path.getPoints(100));
-				const wireMat = new THREE.LineBasicMaterial({ color: COLOR_TRACE, transparent: true, opacity: 0.2 });
-				scene.add(new THREE.Line(wireGeo, wireMat));
-
-				// 2. The Signal Head - CHANGED TO SPHERE + BASIC MATERIAL
-				const headGeo = new THREE.SphereGeometry(0.3, 16, 16);
-				const headMat = new THREE.MeshBasicMaterial({ color: COLOR_SIGNAL });
-				const head = new THREE.Mesh(headGeo, headMat);
-
-				// 3. The Ribbon Trail
-				const trailLen = 25;
-				const trailGeo = new THREE.PlaneGeometry(0.3, 1, 1, trailLen);
-				const trailMat = new THREE.MeshBasicMaterial({
-					color: COLOR_SIGNAL,
-					transparent: true,
-					opacity: 0.8,
-					blending: THREE.AdditiveBlending,
-					side: THREE.DoubleSide
-				});
-
-				// Alpha fade attribute
-				const alphas = new Float32Array(trailGeo.attributes.position.count);
-				for (let i = 0; i < alphas.length; i++) {
-					alphas[i] = 1.0 - (Math.floor(i / 2) / trailLen);
-				}
-				trailGeo.setAttribute('vAlpha', new THREE.BufferAttribute(alphas, 1));
-
-				trailMat.onBeforeCompile = (shader) => {
-					shader.vertexShader = `attribute float vAlpha; varying float vA; ${shader.vertexShader}`.replace(`void main() {`, `void main() { vA = vAlpha;`);
-					shader.fragmentShader = `varying float vA; ${shader.fragmentShader}`.replace(`vec4 diffuseColor = vec4( diffuse, opacity );`, `vec4 diffuseColor = vec4( diffuse, opacity * vA );`);
-				};
-
-				const trail = new THREE.Mesh(trailGeo, trailMat);
-				scene.add(head, trail);
-
-				const history = Array.from({ length: trailLen + 1 }, () => new THREE.Vector3(-30, 0, 0));
-
-				return {
-					head, trail, path,
-					progress: Math.random() * -0.5,
-					speed: 0.0015 + Math.random() * 0.002,
-					history
-				};
-			}
-
-			for (let i = 0; i < wireCount; i++) signals.push(createSignal());
-
-			const setSize = () => {
-				renderer.setSize(container.clientWidth, container.clientHeight, false);
-				camera.aspect = container.clientWidth / container.clientHeight;
-				camera.updateProjectionMatrix();
-			};
-			window.addEventListener('resize', setSize);
-			setSize();
-
-			function animate() {
-				requestAnimationFrame(animate);
-
-				signals.forEach(s => {
-					s.progress += s.speed;
-					if (s.progress > 1) {
-						s.progress = 0;
-						const startPos = s.path.getPointAt(0);
-						s.history.forEach(h => h.copy(startPos));
-					}
-
-					if (s.progress >= 0) {
-						const pos = s.path.getPointAt(s.progress);
-						s.head.position.copy(pos);
-
-						// Shift history
-						for (let i = s.history.length - 1; i > 0; i--) {
-							s.history[i].copy(s.history[i - 1]);
-						}
-						s.history[0].copy(pos);
-
-						// Update Trail Ribbon
-						const posAttr = s.trail.geometry.attributes.position;
-						for (let i = 0; i < s.history.length; i++) {
-							const p = s.history[i];
-							// Flat-ish ribbon orientation
-							posAttr.setXYZ(i * 2, p.x, p.y - 0.15, p.z);
-							posAttr.setXYZ(i * 2 + 1, p.x, p.y + 0.15, p.z);
-						}
-						posAttr.needsUpdate = true;
-						s.head.visible = true;
-						s.trail.visible = true;
-					} else {
-						s.head.visible = false;
-						s.trail.visible = false;
-					}
-				});
-
-				renderer.render(scene, camera);
-			}
-			animate();
-		})();
-
-		(function () {
-			const canvas = document.getElementById('threejs-canvas-3');
-			if (!canvas) return;
-			const container = canvas.parentElement;
-
-			canvas.style.transform = "translateX(25%)";
-
-			const scene = new THREE.Scene();
-			const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-			const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
-			camera.position.set(7, 7, 7);
-			camera.lookAt(0, 0, 0);
-
-			const size = 10;
-			const res = 60;
-			const geometry = new THREE.PlaneGeometry(size, size, res, res);
-			geometry.rotateX(-Math.PI / 2);
-
-			const modelGroup = new THREE.Group();
-			modelGroup.scale.set(0.5, 0.5, 0.5);
-			scene.add(modelGroup);
-
-			geometry.setAttribute('color', new THREE.BufferAttribute(new Float32Array(geometry.attributes.position.count * 3), 3));
-
-			const terrainMat = new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.DoubleSide });
-			const terrain = new THREE.Mesh(geometry, terrainMat);
-			modelGroup.add(terrain);
-
-			const wireOverlay = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({
-				color: 0x000000, wireframe: true, transparent: true, opacity: 0.05
-			}));
-			modelGroup.add(wireOverlay);
-
-			const ball = new THREE.Mesh(
-				new THREE.SphereGeometry(0.25, 20, 20),
-				new THREE.MeshBasicMaterial({ color: 0xffffff })
-			);
-			ball.visible = false;
-			modelGroup.add(ball);
-
-			let currentX = 0, currentZ = 0;
-			let learningRate = 0.2;
-			let targetHeights = new Float32Array(geometry.attributes.position.count);
-			let params = { a: 1, b: 1, c: 1 };
-
-			let isTransitioning = true;
-			let isWaitingForReset = false;
-
-			function updateColors() {
-				const pos = geometry.attributes.position;
-				const cols = geometry.attributes.color;
-				for (let i = 0; i < pos.count; i++) {
-					const y = pos.getY(i);
-					let t = (y + params.c) / (params.c * 2);
-					t = Math.max(0, Math.min(1, t));
-					const r = t > 0.75 ? 1 : t > 0.5 ? (t - 0.5) * 4 : 0;
-					const g = t > 0.75 ? (1 - t) * 4 : t > 0.25 ? 1 : t * 4;
-					const b = t > 0.5 ? 0 : t > 0.25 ? (0.5 - t) * 4 : 1;
-					cols.setXYZ(i, r, g, b);
-				}
-				cols.needsUpdate = true;
-			}
-
-			function generateNewSurface() {
-				isTransitioning = true;
-				isWaitingForReset = false;
-				ball.visible = false;
-				ball.scale.set(0.01, 0.01, 0.01);
-
-				params = {
-					a: (Math.random() > 0.5 ? 1 : -1) * (Math.random() * 0.3 + 0.3),
-					b: (Math.random() > 0.5 ? 1 : -1) * (Math.random() * 0.3 + 0.3),
-					c: Math.random() * 0.8 + 1.5
-				};
-
-				const pos = geometry.attributes.position;
-				for (let i = 0; i < pos.count; i++) {
-					const x = pos.getX(i);
-					const z = pos.getZ(i);
-					targetHeights[i] = Math.sin(x * params.a) * Math.cos(z * params.b) * params.c;
-				}
-			}
-
-			function getY(x, z) {
-				return Math.sin(x * params.a) * Math.cos(z * params.b) * params.c;
-			}
-
-			generateNewSurface();
-
-			const setSize = () => {
-				renderer.setSize(container.clientWidth, container.clientHeight, false);
-				camera.aspect = container.clientWidth / container.clientHeight;
-				camera.updateProjectionMatrix();
-			};
-			window.addEventListener('resize', setSize);
-			setSize();
-
-			function animate() {
-				requestAnimationFrame(animate);
-
-				const pos = geometry.attributes.position;
-				let diffSum = 0;
-
-				for (let i = 0; i < pos.count; i++) {
-					const currentY = pos.getY(i);
-					const delta = (targetHeights[i] - currentY) * 0.08;
-					pos.setY(i, currentY + delta);
-					diffSum += Math.abs(delta);
-				}
-				pos.needsUpdate = true;
-				updateColors();
-
-				if (isTransitioning && diffSum < 0.05) {
-					isTransitioning = false;
-					currentX = (Math.random() - 0.5) * 7;
-					currentZ = (Math.random() - 0.5) * 7;
-					ball.visible = true;
-				}
-
-				if (!isTransitioning && !isWaitingForReset && ball.visible) {
-					// Instant pop-in
-					if (ball.scale.x < 1) ball.scale.addScalar(0.2);
-
-					const eps = 0.1;
-					const gradX = (getY(currentX + eps, currentZ) - getY(currentX - eps, currentZ)) / (2 * eps);
-					const gradZ = (getY(currentX, currentZ + eps) - getY(currentX, currentZ - eps)) / (2 * eps);
-
-					currentX -= gradX * learningRate;
-					currentZ -= gradZ * learningRate;
-
-					currentX = Math.max(-4.8, Math.min(4.8, currentX));
-					currentZ = Math.max(-4.8, Math.min(4.8, currentZ));
-
-					const isStopped = Math.abs(gradX) < 0.005 && Math.abs(gradZ) < 0.005;
-					const isOutOfBounds = Math.abs(currentX) >= 4.8 || Math.abs(currentZ) >= 4.8;
-
-					if (isStopped || isOutOfBounds) {
-						isWaitingForReset = true;
-						// Faster reset cycle
-						setTimeout(generateNewSurface, 600);
-					}
-				}
-
-				ball.position.set(currentX, getY(currentX, currentZ) + 0.35, currentZ);
-				modelGroup.rotation.y += 0.003;
-
-				renderer.render(scene, camera);
-			}
-			animate();
-		})();
-	</script>
-	<div id="exp-modal-overlay" onclick="closeExpModal()">
-		<div class="exp-modal-window" onclick="event.stopPropagation()">
-			<div class="exp-modal-header">
-				<div class="window-dots">
-					<span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-				</div>
-				<button class="exp-modal-close" onclick="closeExpModal()">&times;</button>
-			</div>
-			<div id="exp-modal-content">
-			</div>
-		</div>
-	</div>
-
-	<style>
-		#exp-modal-overlay {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(0, 0, 0, 0.85);
-			backdrop-filter: blur(5px);
-			display: none;
-			align-items: center;
-			justify-content: center;
-			z-index: 100000;
-			font-family: inherit;
-		}
-
-		.exp-modal-window {
-			background: #fff;
-			color: #333;
-			width: 90%;
-			max-width: 1000px;
-			border-radius: 12px;
-			overflow: hidden;
-			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-			animation: modalFadeIn 0.2s ease-out;
-		}
-
-		@keyframes modalFadeIn {
-			from {
-				opacity: 0;
-				transform: scale(0.95);
-			}
-
-			to {
-				opacity: 1;
-				transform: scale(1);
-			}
-		}
-
-		.exp-modal-header {
-			background: #f4f4f4;
-			padding: 12px 20px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			border-bottom: 1px solid #eee;
-		}
-
-		.window-dots {
-			display: flex;
-			gap: 6px;
-		}
-
-		.dot {
-			width: 10px;
-			height: 10px;
-			border-radius: 50%;
-		}
-
-		.dot.r {
-			background: #ff5f56;
-		}
-
-		.dot.y {
-			background: #ffbd2e;
-		}
-
-		.dot.g {
-			background: #27c93f;
-		}
-
-		.exp-modal-close {
-			background: none;
-			border: none;
-			font-size: 24px;
-			cursor: pointer;
-			color: #999;
-		}
-
-		.exp-modal-close:hover {
-			color: #333;
-		}
-
-		#exp-modal-content {
-			padding: 40px;
-		}
-
-		.m-title {
-			font-size: 2rem;
-			margin: 0;
-			color: #111;
-			line-height: 1.2;
-		}
-
-		.m-role {
-			color: #2a7fba;
-			font-weight: bold;
-			text-transform: uppercase;
-			font-size: 0.85rem;
-			letter-spacing: 1px;
-			margin-top: 5px;
-			display: block;
-		}
-
-		.m-meta {
-			margin-top: 15px;
-			font-size: 0.9rem;
-			color: #777;
-			border-bottom: 1px solid #eee;
-			padding-bottom: 15px;
-		}
-
-		.m-body {
-			margin-top: 12px;
-			line-height: 1.7;
-			color: #444;
-		}
-	</style>
-
-	<script>
-		const internshipData = {
-			'internship-4': {
-				title: "ASML",
-				role: "Data Analyst Intern",
-				loc: "Veldhoven, NL",
-				dur: "Jun 2025 – Jan 2026",
-				comp: "ASML is a global leader in semiconductor lithography systems.",
-				desc: `
-                <ul>
-                    <li>Overhauled a defect analysis dashboard for reticle monitoring in semiconductor production.</li>
-                    <li>Optimized data architecture and queries (SQL & Python) on Spotfire and Databricks, reducing load times.</li>
-                    <li>Designed new KPIs and interactive features to streamline decision-making using web components.</li>
-                    <li>Collaborated with engineers to validate data for mission-critical dashboards.</li>
-                </ul>`
-			},
-			'internship-3': {
-				title: "Austrian Institute of Technology (AIT)",
-				role: "Machine Learning Research Intern",
-				loc: "Vienna, AT",
-				dur: "Apr – Jun 2025",
-				comp: "Center for Digital Safety & Security (DSS).",
-				desc: `
-                <ul>
-                    <li>Implemented federated learning research pipelines for object detection using Ultralytics YOLO and Python.</li>
-                    <li>Deployed on NVIDIA Jetson, conducting performance benchmarks and inference optimization.</li>
-                    <li>Evaluated model performance across various training scenarios and convergence benchmarks.</li>
-                </ul>`
-			},
-			'internship-2': {
-				title: "National Institute for Nuclear Physics (INFN)",
-				role: "Data Analyst Research Intern",
-				loc: "Frascati, IT",
-				dur: "Jul – Aug 2023",
-				comp: "Laboratori Nazionali di Frascati (LNF) - specializing in particle physics research.",
-				desc: `
-                <ul>
-                    <li>Performed energy response analysis for the calibration of silicon drift detectors (SDD) in nuclear physics (SIDDHARTA-2).</li>
-                    <li>Used C++ and CERN's ROOT framework for statistical analysis of large experimental datasets.</li>
-                </ul>`
-			},
-			'internship-1': {
-				title: "Austrian Academy of Sciences (ÖAW)",
-				role: "Electronics Research Intern",
-				loc: "Vienna, AT",
-				dur: "Apr – Jun 2022",
-				comp: "Stefan Meyer Institute for Subatomic Physics (SMI), now Marietta Blau Institute (MBI).",
-				desc: `
-                <ul>
-                    <li>Assisted in the assembly and hardware testing of silicon photomultiplier pre-amplifier boards for particle physics (ASACUSA, CERN-AD).</li>
-                    <li>Debugged Arduino and PyQt code; installed pre-amplifier boards with FPGA modules.</li>
-                </ul>`
-			},
-			'more-info_': {
-				title: "Additional Experience",
-				role: "Engineer & Researcher",
-				loc: "International",
-				dur: "Ongoing",
-				comp: "Research & Development",
-				desc: "For a full breakdown of my academic projects and technical publications, please refer to the 'Projects' section or download my full CV above."
-			}
-		};
-
-		function openModal(id) {
-			const data = internshipData[id];
-			if (!data) return;
-
-			// Inside your openModal function, update this part:
-			document.getElementById('exp-modal-content').innerHTML = `
-				<h2 class="m-title">${data.title}</h2>
-				<span class="m-role">${data.role}</span>
-				<div class="m-meta">
-					<strong>${data.loc}</strong> &nbsp; | &nbsp; ${data.dur}
-				</div>
-				
-				<p style="font-size: 0.9rem; margin-top: 20px; margin-bottom: 0;">
-					<strong>About:</strong> ${data.comp}
-				</p>
-				
-				<div class="m-body">
-					${data.desc}
-				</div>
-			`;
-
-			document.getElementById('exp-modal-overlay').style.display = 'flex';
-			document.body.style.overflow = 'hidden';
-		}
-
-		function closeExpModal() {
-			document.getElementById('exp-modal-overlay').style.display = 'none';
-			document.body.style.overflow = 'auto';
-		}
-	</script>
-</body>
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    
+
+<!-- start custom head snippets -->
+
+<!-- Support for Academicons -->
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
+
+<!-- Support for Font Awesome -->
+ <link rel="preload" href="http://localhost:4000/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="http://localhost:4000/assets/css/fontawesome.css"></noscript>
+
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<meta name="theme-color" content="var(--global-bg-color)"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><span class="navicon"></span></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist selected">
+            <a href="http://localhost:4000/">Laurent Foyer</a>
+          </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="http://localhost:4000/year-archive/">Blog</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="http://localhost:4000/projects/">Projects</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="http://localhost:4000/cv/">CV</a>
+            </li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="http://localhost:4000/images/profile.png" class="author__avatar" alt="Laurent Foyer"  fetchpriority="high" />
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Laurent Foyer</h3>
+    
+    <p class="author__bio">Computer Science Engineer</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>France</li>
+      
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>INSA Rouen</li>
+      
+      
+      
+        <li><a href="mailto:laurent.me.foyer@gmail.com"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+      
+            
+      
+            
+      
+      
+                              
+      
+      
+      
+      
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li><a href="https://github.com/lfoyer"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+              
+      
+      
+            
+      
+                  
+                  
+      
+            
+            
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
+      
+      
+            
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Hi!">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Hi!
+</h1>
+          
+        
+        
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>I’m Laurent. I am a computer scientist and I specialize in data analytics, statistical modeling, and software. I also have a special interest in electronics and embedded hardware. Have a look at my portfolio!</p>
+
+<p><br /><br /></p>
+
+<h1 id="about-me">About me</h1>
+<p>My academic background is in computer science and electrical engineering. Throughout my studies, I acquired a sharp interest in state-of-the-art technology through various internships, spanning from nuclear physics instrumentation to semiconductor machinery.</p>
+
+<p>I operate across the entire technical stack: from high-level software and machine learning to electronic systems and hardware integration. I am passionate about bridging the gap between advanced computing and fundamental physical systems.</p>
+
+<pre><code class="language-mermaid">---
+config:
+  theme: 'forest'
+---
+graph TD;
+    Me--&gt;A[Data Analytics];
+    Me--&gt;B[Machine Learning];
+    Me--&gt;C[Embedded Systems];
+    Me--&gt;D[Software Development];
+</code></pre>
+<p><br /><br /></p>
+
+<h1 id="about-this-website">About this website</h1>
+<p>This site is still currently under development (June 2026). It is likely you are one of the first people to view it!</p>
+
+<p>Check back later for more, or feel free to reach out at <a href="mailto:laurent.me.foyer@gmail.com">laurent.me.foyer@gmail.com</a></p>
+
+<!--
+
+<br /><br /><br /><br /><br /><br /><br />
+
+
+This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+
+ You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+
+A data-driven personal website
+======
+Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
+Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+
+For those users that need more advanced functionality, the template also supports the following popular tools:
+- [MathJax](https://www.mathjax.org/) for mathematical equations
+- [Mermaid](https://mermaid.js.org/) for diagraming
+- [Plotly](https://plotly.com/javascript/) for plotting
+
+Getting started
+======
+1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
+1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
+1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
+1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
+1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
+1. Check status by going to the repository settings, in the "GitHub pages" section
+
+Site-wide configuration
+------
+The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+
+Create content & metadata
+------
+For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+
+**Markdown generator**
+
+The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
+) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+
+How to edit your site's GitHub repository
+------
+Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+
+Example: editing a Markdown file for a talk
+![Editing a Markdown file for a talk](/images/editing-talk.png)
+
+For more info
+------
+More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+
+-->
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- Support for MathJax -->
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-copyright">
+  &copy; 2026 Laurent Foyer, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2026-06-25, <a href="/sitemap/" style="text-transform: uppercase;">Sitemap</a>
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
 </html>
+
